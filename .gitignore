@@ -206,6 +206,6 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Ignore specific data files in Track1_Data
-Track1_Data/raw/*.xlsx
-Track1_Data/reports/*.pdf
+# Ignore all .xlsx and .pdf files in Track1_Data and its subfolders
+Track1_Data/**/*.xlsx
+Track1_Data/**/*.pdf
