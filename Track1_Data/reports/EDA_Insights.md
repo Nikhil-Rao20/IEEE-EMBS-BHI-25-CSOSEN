@@ -39,3 +39,52 @@ Evidence: The histogram for completion_rate shows two peaks: a large one near 1.
 A critical technical finding is the high rate of missing data for the primary outcome variables. This must be addressed carefully in the next phase of the project.
 
 Evidence: There are 43 missing values (20.5%) for the bdi_ii_after_intervention_12w score and 44 missing values (21.0%) for the bdi_ii_follow_up_24w score.
+
+# BDI vs Therapies Completed
+
+Major Insights:
+1. Best Treatment Outcomes:
+12-week: Severe depression patients with medium completion (50-80%) → 20.0 point improvement
+24-week: Severe depression patients with high completion (80-100%) → 22.8 point improvement
+2. Completion Rate Impact by Severity Level:
+Minimal Depression (0-13):
+
+Low completion: ~2.4 points improvement
+High completion: ~1.7 points improvement
+Surprising finding: Higher completion doesn't always mean better outcomes for minimal depression
+Mild Depression (14-19):
+
+Low completion: ~4.5 points improvement
+High completion: ~5.9 points improvement
+Clear benefit: +1.4 points (12w), +1.6 points (24w) with higher completion
+Moderate Depression (20-28):
+
+Shows dramatic improvement with higher completion
+High completion: ~11.4 points (12w), ~14.8 points (24w)
+Severe Depression (29+):
+
+Excellent response across all completion levels
+High completion: ~13.7 points (12w), ~22.8 points (24w)
+Best overall outcomes in this group
+3. Success Rate Patterns (≥3 point improvement):
+5 combinations achieve ≥70% success rate at 12 weeks
+4 combinations maintain ≥70% success rate at 24 weeks
+Severe depression patients show 100% success rate with high completion
+4. Percentage Improvements:
+Severe patients: Up to 61% improvement from baseline
+Moderate patients: Up to 67% improvement from baseline
+Mild patients: Up to 49% improvement from baseline
+Minimal patients: Up to 37% improvement from baseline
+
+1. BEST OUTCOMES:
+   12-week: Severe (29+) + Medium (50-80%) → 20.0 point improvement
+   24-week: Severe (29+) + High (80-100%) → 22.8 point improvement
+
+2. COMPLETION RATE IMPACT BY SEVERITY:
+   Minimal (0-13): High vs Low completion → +-0.7 points (12w), +-0.4 points (24w)
+   Mild (14-19): High vs Low completion → +1.4 points (12w), +1.6 points (24w)
+   Moderate (20-28): High vs Low completion → +nan points (12w), +nan points (24w)
+
+3. SUCCESS RATE PATTERNS:
+   Combinations with ≥70% success rate (12w): 5
+   Combinations with ≥70% success rate (24w): 4
