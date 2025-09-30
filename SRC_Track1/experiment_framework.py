@@ -44,7 +44,7 @@ class ExperimentFramework:
     - Conference-ready reporting
     """
     
-    def __init__(self, random_seed: int = 42):
+    def __init__(self, random_seed: int = 42, output_folder_name='Results'):
         """Initialize the experiment framework."""
         self.random_seed = random_seed
         self.results = {}
@@ -58,7 +58,7 @@ class ExperimentFramework:
         np.random.seed(random_seed)
         
         # Create output directories
-        self.output_dir = Path("../Results/Model_Experiments")
+        self.output_dir = Path(f"../{output_folder_name}/Model_Experiments")
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         print(f"🔬 Experiment Framework Initialized")

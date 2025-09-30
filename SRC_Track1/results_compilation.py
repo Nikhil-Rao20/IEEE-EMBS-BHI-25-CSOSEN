@@ -33,13 +33,15 @@ class ResultsCompilation:
     suitable for academic conferences and journals.
     """
     
-    def __init__(self, output_dir: str = "../Results/Conference_Submission"):
+    def __init__(self, output_folder_name ='Results'):
         """
         Initialize results compilation.
         
         Args:
             output_dir: Directory to save compiled results
         """
+        output_dir: str = f"../{output_folder_name}/Conference_Submission"
+        
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         

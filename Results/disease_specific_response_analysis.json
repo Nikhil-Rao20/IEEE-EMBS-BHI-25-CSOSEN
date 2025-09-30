@@ -1,0 +1,33 @@
+{
+  "overall_response": {
+    "sample_size": 167,
+    "mean_improvement_12w": 3.568862275449102,
+    "mean_improvement_24w": 4.335329341317365,
+    "response_rate_12w": 40.119760479041915,
+    "response_rate_24w": 43.712574850299404,
+    "remission_rate_12w": 83.8323353293413,
+    "remission_rate_24w": 85.02994011976048
+  },
+  "condition_response_patterns": {},
+  "burden_response": {
+    "Single_Condition": {
+      "sample_size": 67,
+      "mean_improvement_12w": 4.7611940298507465,
+      "mean_improvement_24w": 5.7164179104477615,
+      "response_rate_12w": 31.343283582089555,
+      "response_rate_24w": 41.7910447761194,
+      "remission_rate_12w": 74.6268656716418,
+      "remission_rate_24w": 74.6268656716418
+    },
+    "Multiple_Conditions": {
+      "sample_size": 100,
+      "mean_improvement_12w": 2.77,
+      "mean_improvement_24w": 3.41,
+      "response_rate_12w": 46.0,
+      "response_rate_24w": 45.0,
+      "remission_rate_12w": 90.0,
+      "remission_rate_24w": 92.0
+    }
+  },
+  "analysis_date": "2025-09-30 23:00:42"
+}

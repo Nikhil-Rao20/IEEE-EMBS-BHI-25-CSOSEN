@@ -1,0 +1,130 @@
+{
+  "creation_info": {
+    "created_date": "2025-10-01T00:29:24.675580",
+    "created_by": "Corrected Simple Feature Engineering Pipeline",
+    "approach": "Complete medical condition encoding with proper one-hot encoding",
+    "key_improvement": "Includes ALL 4 real medical conditions + proper condition type encoding"
+  },
+  "dataset_info": {
+    "total_samples": 167,
+    "total_features": 24,
+    "total_targets": 2,
+    "final_shape": [
+      167,
+      26
+    ]
+  },
+  "real_medical_conditions": {
+    "count": 4,
+    "columns": [
+      "condition_cancer",
+      "condition_acute_coronary_syndrome",
+      "condition_renal_insufficiency",
+      "condition_lower_limb_amputation"
+    ],
+    "prevalence": {
+      "condition_cancer": 108,
+      "condition_acute_coronary_syndrome": 39,
+      "condition_renal_insufficiency": 10,
+      "condition_lower_limb_amputation": 10
+    },
+    "note": "ALL 4 real medical diagnoses properly encoded as binary columns"
+  },
+  "condition_types": {
+    "count": 7,
+    "columns": [
+      "condition_type_breast",
+      "condition_type_prostate",
+      "condition_type_revascularization",
+      "condition_type_no_prosthesis",
+      "condition_type_predialysis",
+      "condition_type_percutaneous_coronary_intervention",
+      "condition_type_dialysis"
+    ],
+    "prevalence": {
+      "condition_type_breast": 67,
+      "condition_type_prostate": 41,
+      "condition_type_revascularization": 31,
+      "condition_type_no_prosthesis": 10,
+      "condition_type_predialysis": 9,
+      "condition_type_percutaneous_coronary_intervention": 8,
+      "condition_type_dialysis": 1
+    },
+    "note": "Proper one-hot encoding for all condition subtypes"
+  },
+  "engineered_features": {
+    "count": 19,
+    "columns": [
+      "condition_cancer",
+      "condition_acute_coronary_syndrome",
+      "condition_renal_insufficiency",
+      "condition_lower_limb_amputation",
+      "condition_type_breast",
+      "condition_type_prostate",
+      "condition_type_revascularization",
+      "condition_type_no_prosthesis",
+      "condition_type_predialysis",
+      "condition_type_percutaneous_coronary_intervention",
+      "condition_type_dialysis",
+      "bdi_baseline_log",
+      "bdi_severity_category",
+      "bdi_baseline_squared",
+      "age_group",
+      "age_squared",
+      "therapy_completion_rate",
+      "therapy_engagement",
+      "sex_encoded"
+    ],
+    "note": "All engineered features with clear non-medical naming"
+  },
+  "feature_categories": {
+    "medical_conditions": [
+      "condition_cancer",
+      "condition_acute_coronary_syndrome",
+      "condition_renal_insufficiency",
+      "condition_lower_limb_amputation"
+    ],
+    "condition_subtypes": [
+      "condition_type_breast",
+      "condition_type_prostate",
+      "condition_type_revascularization",
+      "condition_type_no_prosthesis",
+      "condition_type_predialysis",
+      "condition_type_percutaneous_coronary_intervention",
+      "condition_type_dialysis"
+    ],
+    "demographic": [
+      "age",
+      "age_group",
+      "age_squared",
+      "therapy_engagement",
+      "sex_encoded"
+    ],
+    "psychological": [
+      "bdi_ii_baseline",
+      "bdi_baseline_log",
+      "bdi_severity_category",
+      "bdi_baseline_squared"
+    ],
+    "treatment": [
+      "mindfulness_therapies_started",
+      "mindfulness_therapies_completed",
+      "therapy_completion_rate",
+      "therapy_engagement"
+    ],
+    "disease_burden": [],
+    "administrative": [
+      "hospital_center_id"
+    ]
+  },
+  "target_variables": [
+    "bdi_ii_after_intervention_12w",
+    "bdi_ii_follow_up_24w"
+  ],
+  "quality_checks": {
+    "missing_values": 0,
+    "infinite_values": 0,
+    "all_conditions_present": true,
+    "data_quality_score": 100
+  }
+}

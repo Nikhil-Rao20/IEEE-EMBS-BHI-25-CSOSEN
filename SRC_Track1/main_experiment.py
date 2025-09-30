@@ -59,10 +59,12 @@ def main():
     print("-" * 40)
     
     # Initialize experiment framework
-    framework = ExperimentFramework(random_seed=42)
+    output_folder_name = "Results_Corrected_Data"  # ✅ CHANGED 
+    framework = ExperimentFramework(random_seed=42, output_folder_name=output_folder_name)
     
     # Data paths
-    train_data_path = "../Track1_Data/processed/train_engineered_features.xlsx"
+    # train_data_path = "../Track1_Data/processed/train_corrected_features.xlsx"
+    train_data_path = "Track1_Data/processed/train_corrected_features.xlsx"
     
     # Check if processed data exists
     if not Path(train_data_path).exists():
@@ -242,7 +244,7 @@ def main():
             statistical_analyzer.create_statistical_visualizations(
                 all_phase_results, 
                 save_plots=True, 
-                output_dir="../Results/Statistical_Analysis"
+                output_dir=f"../{output_folder_name}/Statistical_Analysis"
             )
             
         else:
@@ -267,7 +269,7 @@ def main():
     
     try:
         if all_phase_results:
-            results_compiler = ResultsCompilation()
+            results_compiler = ResultsCompilation(output_folder_name=output_folder_name)
             
             # Compile all results
             results_compiler.compile_all_results(all_phase_results, statistical_analyzer)
