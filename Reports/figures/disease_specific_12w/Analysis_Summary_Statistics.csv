@@ -1,0 +1,9 @@
+Metric,Value
+Total Patients,167
+Disease Groups,4
+Overall ANOVA p-value,0.0337
+Best Prediction Group,Renal (r=0.984)
+Worst Prediction Group,Cardiovascular (r=0.936)
+Top Predictive Feature,feature_25 (49.7%)
+Overall Model R²,0.916
+Significant Group Differences,Yes (p < 0.05)

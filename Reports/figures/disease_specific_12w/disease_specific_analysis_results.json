@@ -1,0 +1,62 @@
+{
+  "analysis_date": "2025-10-02 00:05:00",
+  "model_used": "phase5_transformer",
+  "overall_performance": {
+    "mae": 1.6171257485029937,
+    "r2": 0.915802822347381,
+    "n_samples": 167
+  },
+  "disease_groups": {
+    "Cancer": {
+      "n_samples": 108,
+      "mean_bdi": 8.50925925925926,
+      "mae": 1.564074074074074,
+      "r2": 0.9283471316781498
+    },
+    "Cardiovascular": {
+      "n_samples": 39,
+      "mean_bdi": 5.384615384615385,
+      "mae": 1.6825641025641027,
+      "r2": 0.8094164962825279
+    },
+    "Renal": {
+      "n_samples": 10,
+      "mean_bdi": 3.5,
+      "mae": 1.1640000000000001,
+      "r2": 0.9211131462333826
+    },
+    "Musculoskeletal": {
+      "n_samples": 10,
+      "mean_bdi": 8.5,
+      "mae": 2.3880000000000003,
+      "r2": 0.8956810051736881
+    }
+  },
+  "statistical_tests": {
+    "anova_p_value": 0.03368108007624912,
+    "kruskal_wallis_p_value": 0.014938400878156354,
+    "significant_differences": true
+  },
+  "top_medical_features": [
+    {
+      "feature": "condition_type_breast",
+      "importance": 0.009227673490145026
+    },
+    {
+      "feature": "condition_type_prostate",
+      "importance": 0.004970774878293347
+    },
+    {
+      "feature": "condition_type_revascularization",
+      "importance": 0.004764812648488514
+    },
+    {
+      "feature": "condition_type_no_prosthesis",
+      "importance": 0.0040088880866184125
+    },
+    {
+      "feature": "condition_lower_limb_amputation",
+      "importance": 0.003866837943089152
+    }
+  ]
+}

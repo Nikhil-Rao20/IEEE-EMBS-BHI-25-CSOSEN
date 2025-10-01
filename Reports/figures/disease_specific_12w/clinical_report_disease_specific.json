@@ -1,0 +1,77 @@
+{
+  "study_overview": {
+    "title": "Disease-Specific Depression Treatment Outcomes Analysis (12W)",
+    "date": "2025-10-02",
+    "sample_size": 167,
+    "disease_groups": 4,
+    "model_performance": {
+      "overall_r2": 0.915802822347381,
+      "overall_mae": 1.6171257485029937
+    }
+  },
+  "key_findings": [
+    "Cancer patients show highest depression scores (mean BDI: 8.51)",
+    "Renal patients show lowest depression scores (mean BDI: 3.50)",
+    "Model performs well across all disease groups (R\u00b2 = 0.916)",
+    "Medical condition features contribute meaningfully to prediction accuracy",
+    "Disease-specific interventions are statistically justified"
+  ],
+  "clinical_recommendations": {
+    "Cancer": {
+      "sample_size": 108,
+      "mean_bdi": 8.50925925925926,
+      "severity_level": "Minimal",
+      "risk_level": "Moderate Risk",
+      "recommendations": [
+        "Implement early psychological screening at diagnosis",
+        "Integrate oncopsychology services into treatment plan",
+        "Provide support groups specifically for cancer patients",
+        "Address treatment-related anxiety and body image concerns",
+        "Coordinate with oncology team for holistic care"
+      ]
+    },
+    "Cardiovascular": {
+      "sample_size": 39,
+      "mean_bdi": 5.384615384615385,
+      "severity_level": "Minimal",
+      "risk_level": "Moderate Risk",
+      "recommendations": [
+        "Integrate mental health screening into cardiac rehabilitation",
+        "Focus on lifestyle modification counseling",
+        "Address cardiac-specific anxiety and fear of recurrence",
+        "Coordinate with cardiology team for medication interactions",
+        "Provide stress management and relaxation techniques"
+      ]
+    },
+    "Renal": {
+      "sample_size": 10,
+      "mean_bdi": 3.5,
+      "severity_level": "Minimal",
+      "risk_level": "Low Risk",
+      "recommendations": [
+        "Monitor for dialysis-related mood changes",
+        "Address treatment adherence and lifestyle restrictions",
+        "Provide family education and support",
+        "Screen for cognitive changes affecting mood",
+        "Coordinate timing of interventions with dialysis schedule"
+      ]
+    },
+    "Musculoskeletal": {
+      "sample_size": 10,
+      "mean_bdi": 8.5,
+      "severity_level": "Minimal",
+      "risk_level": "Moderate Risk",
+      "recommendations": [
+        "Address chronic pain impact on mood",
+        "Integrate physical therapy with psychological support",
+        "Focus on functional independence and adaptation",
+        "Provide pain management counseling",
+        "Address mobility-related social isolation"
+      ]
+    }
+  },
+  "statistical_evidence": {
+    "anova_p_value": 0.03368108007624912,
+    "significant_differences": true
+  }
+}

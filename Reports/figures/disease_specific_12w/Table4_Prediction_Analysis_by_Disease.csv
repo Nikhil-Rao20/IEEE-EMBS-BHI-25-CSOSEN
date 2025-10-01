@@ -1,0 +1,5 @@
+Disease_Group,Mean_Prediction,Std_Prediction,Mean_Actual,Std_Actual,Prediction_Range,Actual_Range,Correlation,Top_Predicted_Features
+Cancer,8.43,6.49,8.51,7.65,0.3 - 33.6,0.0 - 40.0,0.971,"F10, F24, F11"
+Cardiovascular,5.67,3.46,5.38,5.05,0.6 - 14.0,0.0 - 19.0,0.936,"F7, F12, F2"
+Renal,3.79,4.49,3.5,5.82,0.3 - 16.0,0.0 - 20.0,0.984,"F8, F14, F16"
+Musculoskeletal,8.38,6.84,8.5,8.22,2.3 - 26.2,0.0 - 26.0,0.954,"F13, F9, F2"

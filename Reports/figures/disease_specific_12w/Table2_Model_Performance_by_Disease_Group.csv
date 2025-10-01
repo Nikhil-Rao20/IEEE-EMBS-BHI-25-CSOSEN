@@ -1,0 +1,5 @@
+Disease_Group,N_Patients,R2_Score,MAE,MSE,RMSE,Mean_Absolute_Error,Mean_Prediction,Mean_Actual,Prediction_Std,Actual_Std,Correlation
+Cancer,108,0.928,1.564,4.19,2.047,1.564,8.43,8.51,6.49,7.65,0.971
+Cardiovascular,39,0.809,1.683,4.854,2.203,1.683,5.67,5.38,3.46,5.05,0.936
+Renal,10,0.921,1.164,2.67,1.634,1.164,3.79,3.5,4.49,5.82,0.984
+Musculoskeletal,10,0.896,2.388,7.057,2.657,2.388,8.38,8.5,6.84,8.22,0.954

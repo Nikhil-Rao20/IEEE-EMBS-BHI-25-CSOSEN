@@ -1,0 +1,5 @@
+Analysis_Type,Key_Finding,Clinical_Relevance
+Statistical,Cancer patients have highest BDI scores (mean: 8.51),Cancer patients may need more intensive depression screening
+Model Performance,Best model performance: Cancer (R² = 0.928),Model reliability varies by disease type
+Feature Importance,Most important feature: feature_25 (49.7%),Key predictive factors identified for intervention targeting
+Prediction Analysis,Highest prediction accuracy: Renal (r = 0.984),Disease-specific prediction models may improve accuracy

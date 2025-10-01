@@ -1,0 +1,7 @@
+Comparison,Cohens_d,Effect_Size
+Cancer vs Cardiovascular,0.44,Small
+Cancer vs Renal,0.661,Medium
+Cancer vs Musculoskeletal,0.001,Small
+Cardiovascular vs Renal,0.354,Small
+Cardiovascular vs Musculoskeletal,-0.523,Medium
+Renal vs Musculoskeletal,-0.666,Medium
