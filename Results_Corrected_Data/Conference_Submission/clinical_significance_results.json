@@ -1,0 +1,552 @@
+{
+  "clinical_threshold": 3.0,
+  "model_analysis": {
+    "phase1_linear_regression": {
+      "mean_mae": 5.179044055474725,
+      "std_mae": 0.37649985645432976,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_ridge_regression": {
+      "mean_mae": 4.785779764552108,
+      "std_mae": 0.42899300764409637,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_lasso_regression": {
+      "mean_mae": 4.70915109261414,
+      "std_mae": 0.5958377547631363,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_elastic_net": {
+      "mean_mae": 4.7736978128632215,
+      "std_mae": 0.47575651016149084,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_bayesian_ridge": {
+      "mean_mae": 4.793784637499475,
+      "std_mae": 0.3970790194387692,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_polynomial_2": {
+      "mean_mae": 117553974438.92383,
+      "std_mae": 154883844148.6722,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_polynomial_3": {
+      "mean_mae": 14.06267794952188,
+      "std_mae": 6.188812993067905,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_huber_regressor": {
+      "mean_mae": 4.843815357326692,
+      "std_mae": 0.4550621073258759,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_ransac_regressor": {
+      "mean_mae": 5.98369990237225,
+      "std_mae": 1.175864552600953,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase1_decision_tree": {
+      "mean_mae": 5.18913648780174,
+      "std_mae": 0.7113858357012107,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_random_forest": {
+      "mean_mae": 4.818156203904512,
+      "std_mae": 0.4982147436569138,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_extra_trees": {
+      "mean_mae": 4.934222084329268,
+      "std_mae": 0.4068540139001014,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_ada_boost": {
+      "mean_mae": 4.828865410248597,
+      "std_mae": 0.5944537512328547,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_gradient_boosting": {
+      "mean_mae": 5.066023151788354,
+      "std_mae": 0.5310875502965594,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_svr_linear": {
+      "mean_mae": 4.667913529114592,
+      "std_mae": 0.6434383019039125,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_svr_rbf": {
+      "mean_mae": 4.727225835928388,
+      "std_mae": 0.908380251215892,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_svr_poly": {
+      "mean_mae": 5.244419198227286,
+      "std_mae": 1.1882134168696266,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_nu_svr": {
+      "mean_mae": 4.735672639368895,
+      "std_mae": 1.022249655540607,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_knn_regressor": {
+      "mean_mae": 5.0149770501801,
+      "std_mae": 0.6350310770886284,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_knn_uniform": {
+      "mean_mae": 4.950526656943769,
+      "std_mae": 0.713162203825413,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase2_radius_neighbors": {
+      "mean_mae": 6.194949346678929e+18,
+      "std_mae": 7.54463100795421e+17,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase3_xgboost": {
+      "mean_mae": 4.999033802673354,
+      "std_mae": 0.7003366008178462,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase3_catboost": {
+      "mean_mae": 4.90996932082646,
+      "std_mae": 0.5662966233522159,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase3_voting_regressor": {
+      "mean_mae": 5.389443501886137,
+      "std_mae": 0.6165073834057078,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase3_stacking_regressor": {
+      "mean_mae": 5.184297944881714,
+      "std_mae": 0.8008535375404849,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase3_advanced_stacking": {
+      "mean_mae": 5.2597228706654775,
+      "std_mae": 0.7350939545576571,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase4_mlp_small": {
+      "mean_mae": 5.239313174794844,
+      "std_mae": 0.7995747566969331,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase4_mlp_medium": {
+      "mean_mae": 4.958311120701185,
+      "std_mae": 0.3764180159104258,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase4_mlp_large": {
+      "mean_mae": 5.295408809470728,
+      "std_mae": 1.1975087599183611,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase4_tf_mlp_simple": {
+      "mean_mae": 5.111428434017933,
+      "std_mae": 1.0250294309973211,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase4_tf_mlp_deep": {
+      "mean_mae": 5.8157587514404065,
+      "std_mae": 2.3248796528208073,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase4_tf_resnet": {
+      "mean_mae": 5.067005243649086,
+      "std_mae": 0.7232730233442056,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase4_tf_attention": {
+      "mean_mae": 4.972362386999708,
+      "std_mae": 0.4115366244242409,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_arima": {
+      "mean_mae": 5.707697486425353,
+      "std_mae": 1.1862842149482253,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_arima_211": {
+      "mean_mae": 5.64260667715958,
+      "std_mae": 1.1528729271065365,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_arima_121": {
+      "mean_mae": 9.005497745564782,
+      "std_mae": 1.9099861449110376,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_exponential_smoothing": {
+      "mean_mae": 5.874287742583104,
+      "std_mae": 1.0178326369369912,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_moving_average": {
+      "mean_mae": 6.376693766937669,
+      "std_mae": 1.3231400301992684,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_lstm_simple": {
+      "mean_mae": 5.494203354560433,
+      "std_mae": 0.5590515106971624,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_lstm_bidirectional": {
+      "mean_mae": 4.804688340592732,
+      "std_mae": 0.5105679807532842,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_lstm_stacked": {
+      "mean_mae": 4.6430938799908406,
+      "std_mae": 0.7043717584359135,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_gru": {
+      "mean_mae": 5.004793669532579,
+      "std_mae": 0.5554742478431433,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_transformer": {
+      "mean_mae": 4.645504726732085,
+      "std_mae": 0.6885208894719627,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_rf_trajectory": {
+      "mean_mae": 5.118358932007266,
+      "std_mae": 0.021834885694730986,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    },
+    "phase5_ridge_trajectory": {
+      "mean_mae": 4.991892117661659,
+      "std_mae": 0.28230350748484384,
+      "clinical_acceptability_pct": 0.0,
+      "clinical_acceptability_ci": [
+        0.0,
+        0.0
+      ],
+      "always_clinically_acceptable": "False",
+      "never_clinically_acceptable": "True"
+    }
+  },
+  "ranking": [
+    "phase1_linear_regression",
+    "phase1_ridge_regression",
+    "phase1_lasso_regression",
+    "phase1_elastic_net",
+    "phase1_bayesian_ridge",
+    "phase1_polynomial_2",
+    "phase1_polynomial_3",
+    "phase1_huber_regressor",
+    "phase1_ransac_regressor",
+    "phase1_decision_tree",
+    "phase2_random_forest",
+    "phase2_extra_trees",
+    "phase2_ada_boost",
+    "phase2_gradient_boosting",
+    "phase2_svr_linear",
+    "phase2_svr_rbf",
+    "phase2_svr_poly",
+    "phase2_nu_svr",
+    "phase2_knn_regressor",
+    "phase2_knn_uniform",
+    "phase2_radius_neighbors",
+    "phase3_xgboost",
+    "phase3_catboost",
+    "phase3_voting_regressor",
+    "phase3_stacking_regressor",
+    "phase3_advanced_stacking",
+    "phase4_mlp_small",
+    "phase4_mlp_medium",
+    "phase4_mlp_large",
+    "phase4_tf_mlp_simple",
+    "phase4_tf_mlp_deep",
+    "phase4_tf_resnet",
+    "phase4_tf_attention",
+    "phase5_arima",
+    "phase5_arima_211",
+    "phase5_arima_121",
+    "phase5_exponential_smoothing",
+    "phase5_moving_average",
+    "phase5_lstm_simple",
+    "phase5_lstm_bidirectional",
+    "phase5_lstm_stacked",
+    "phase5_gru",
+    "phase5_transformer",
+    "phase5_rf_trajectory",
+    "phase5_ridge_trajectory"
+  ],
+  "best_clinical_model": {
+    "name": "phase1_linear_regression",
+    "clinical_acceptability_pct": 0.0,
+    "mean_mae": 5.179044055474725
+  }
+}
