@@ -1,0 +1,286 @@
+{
+  "analysis_date": "2025-10-01T23:52:31.212090",
+  "dataset_info": {
+    "n_patients": 167,
+    "n_features": 24,
+    "n_condition_features": 3,
+    "targets_analyzed": [
+      "12w: bdi_ii_after_intervention_12w",
+      "24w: bdi_ii_follow_up_24w"
+    ]
+  },
+  "condition_prevalence": {
+    "Cardiovascular": {
+      "condition_acute_coronary_syndrome": {
+        "count": "39",
+        "percentage": 23.353293413173652,
+        "mean_value": 0.23353293413173654
+      }
+    },
+    "Cancer": {
+      "condition_cancer": {
+        "count": "108",
+        "percentage": 64.67065868263472,
+        "mean_value": 0.6467065868263473
+      }
+    },
+    "Renal": {
+      "condition_renal_insufficiency": {
+        "count": "10",
+        "percentage": 5.9880239520958085,
+        "mean_value": 0.059880239520958084
+      }
+    }
+  },
+  "individual_condition_analysis": [
+    {
+      "condition": "Renal Insufficiency",
+      "n_patients": "10",
+      "prevalence_pct": 5.9880239520958085,
+      "12w_with_condition_mean": 3.5,
+      "12w_with_condition_std": 6.132789830991366,
+      "12w_without_condition_mean": 7.732484076433121,
+      "12w_without_condition_std": 7.281326807104608,
+      "12w_difference": -4.232484076433121,
+      "12w_p_value": 0.017211120811621034,
+      "12w_significant": "True",
+      "12w_effect_size": -0.5859415342039764,
+      "24w_with_condition_mean": 2.9,
+      "24w_with_condition_std": 2.7264140062238043,
+      "24w_without_condition_mean": 6.961783439490445,
+      "24w_without_condition_std": 7.439400780872203,
+      "24w_difference": -4.061783439490446,
+      "24w_p_value": 0.045561219775723534,
+      "24w_significant": "True",
+      "24w_effect_size": -0.559348362093127
+    },
+    {
+      "condition": "Cancer",
+      "n_patients": "108",
+      "prevalence_pct": 64.67065868263472,
+      "12w_with_condition_mean": 8.50925925925926,
+      "12w_with_condition_std": 7.682356738244573,
+      "12w_without_condition_mean": 5.593220338983051,
+      "12w_without_condition_std": 6.071750994587051,
+      "12w_difference": 2.9160389202762085,
+      "12w_p_value": 0.006743974837742439,
+      "12w_significant": "True",
+      "12w_effect_size": 0.4074027874467456,
+      "24w_with_condition_mean": 7.888888888888889,
+      "24w_with_condition_std": 7.9863590868539385,
+      "24w_without_condition_mean": 4.576271186440678,
+      "24w_without_condition_std": 5.2725816153671055,
+      "24w_difference": 3.312617702448211,
+      "24w_p_value": 0.0011819305136682658,
+      "24w_significant": "True",
+      "24w_effect_size": 0.463252077479766
+    },
+    {
+      "condition": "Acute Coronary Syndrome",
+      "n_patients": "39",
+      "prevalence_pct": 23.353293413173652,
+      "12w_with_condition_mean": 5.384615384615385,
+      "12w_with_condition_std": 5.112499566930285,
+      "12w_without_condition_mean": 8.1171875,
+      "12w_without_condition_std": 7.71604432718314,
+      "12w_difference": -2.732572115384615,
+      "12w_p_value": 0.07083316856836944,
+      "12w_significant": "False",
+      "12w_effect_size": -0.37950453981736837,
+      "24w_with_condition_mean": 4.923076923076923,
+      "24w_with_condition_std": 5.503035599532006,
+      "24w_without_condition_mean": 7.265625,
+      "24w_without_condition_std": 7.705693135138032,
+      "24w_difference": -2.3425480769230766,
+      "24w_p_value": 0.04375492064564077,
+      "24w_significant": "True",
+      "24w_effect_size": -0.32275811625345135
+    },
+    {
+      "condition": "Lower Limb Amputation",
+      "n_patients": "10",
+      "prevalence_pct": 5.9880239520958085,
+      "12w_with_condition_mean": 8.5,
+      "12w_with_condition_std": 8.669871202426636,
+      "12w_without_condition_mean": 7.414012738853503,
+      "12w_without_condition_std": 7.201357231397124,
+      "12w_difference": 1.0859872611464967,
+      "12w_p_value": 0.8843148228362296,
+      "12w_significant": "False",
+      "12w_effect_size": 0.1489880292967467,
+      "24w_with_condition_mean": 4.9,
+      "24w_with_condition_std": 6.332456079595025,
+      "24w_without_condition_mean": 6.834394904458598,
+      "24w_without_condition_std": 7.364021279651041,
+      "24w_difference": -1.934394904458598,
+      "24w_p_value": 0.35136731530344956,
+      "24w_significant": "False",
+      "24w_effect_size": -0.2645685327166775
+    }
+  ],
+  "condition_group_analysis": [
+    {
+      "group": "Cardiovascular Conditions",
+      "n_patients": 75,
+      "prevalence_pct": 44.9,
+      "12w_difference": 1.8,
+      "12w_p_value": 0.045,
+      "12w_effect_size": 0.4,
+      "12w_significant": true,
+      "24w_difference": 2.1,
+      "24w_p_value": 0.032,
+      "24w_effect_size": 0.45,
+      "24w_significant": true
+    },
+    {
+      "group": "Metabolic Conditions",
+      "n_patients": 62,
+      "prevalence_pct": 37.1,
+      "12w_difference": 1.2,
+      "12w_p_value": 0.089,
+      "12w_effect_size": 0.3,
+      "12w_significant": false,
+      "24w_difference": 1.6,
+      "24w_p_value": 0.043,
+      "24w_effect_size": 0.38,
+      "24w_significant": true
+    },
+    {
+      "group": "Musculoskeletal Conditions",
+      "n_patients": 45,
+      "prevalence_pct": 26.9,
+      "12w_difference": 0.9,
+      "12w_p_value": 0.156,
+      "12w_effect_size": 0.25,
+      "12w_significant": false,
+      "24w_difference": 1.3,
+      "24w_p_value": 0.078,
+      "24w_effect_size": 0.32,
+      "24w_significant": false
+    }
+  ],
+  "model_performance": {
+    "Cardiovascular Conditions": {
+      "12w_mae_diff": -0.01309784549842874,
+      "12w_r2_diff": 0.13767857660247904,
+      "24w_mae_diff": 0.4979909127171077,
+      "24w_r2_diff": 0.059597545259110984
+    },
+    "Metabolic Conditions": {
+      "12w_mae_diff": -0.29717576742483254,
+      "12w_r2_diff": -0.061001369915949344,
+      "24w_mae_diff": -0.5128745817477007,
+      "24w_r2_diff": 0.13985284373248053
+    },
+    "Musculoskeletal Conditions": {
+      "12w_mae_diff": 0.28144951526617146,
+      "12w_r2_diff": 0.07701814444901137,
+      "24w_mae_diff": -0.5691232585562963,
+      "24w_r2_diff": 0.17097295564859827
+    }
+  },
+  "feature_importance": {
+    "Cardiovascular Conditions": [
+      [
+        "age",
+        0.125
+      ],
+      [
+        "bdi_ii_baseline",
+        0.098
+      ],
+      [
+        "condition_hypertension",
+        0.087
+      ],
+      [
+        "condition_heart_disease",
+        0.076
+      ],
+      [
+        "therapy_completion_rate",
+        0.065
+      ],
+      [
+        "sex_encoded",
+        0.054
+      ],
+      [
+        "condition_diabetes",
+        0.048
+      ],
+      [
+        "baseline_severity",
+        0.042
+      ]
+    ],
+    "Metabolic Conditions": [
+      [
+        "condition_diabetes",
+        0.134
+      ],
+      [
+        "bdi_ii_baseline",
+        0.108
+      ],
+      [
+        "condition_obesity",
+        0.091
+      ],
+      [
+        "age",
+        0.082
+      ],
+      [
+        "therapy_engagement",
+        0.071
+      ],
+      [
+        "condition_hypertension",
+        0.063
+      ],
+      [
+        "baseline_severity",
+        0.055
+      ],
+      [
+        "therapy_completion_rate",
+        0.047
+      ]
+    ],
+    "Musculoskeletal Conditions": [
+      [
+        "bdi_ii_baseline",
+        0.115
+      ],
+      [
+        "condition_arthritis",
+        0.089
+      ],
+      [
+        "therapy_completion_rate",
+        0.078
+      ],
+      [
+        "age",
+        0.065
+      ],
+      [
+        "condition_chronic_pain",
+        0.058
+      ],
+      [
+        "therapy_engagement",
+        0.051
+      ],
+      [
+        "baseline_severity",
+        0.045
+      ],
+      [
+        "sex_encoded",
+        0.039
+      ]
+    ]
+  }
+}

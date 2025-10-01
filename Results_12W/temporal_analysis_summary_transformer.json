@@ -1,0 +1,36 @@
+{
+  "analysis_date": "2025-10-01T23:28:42.128624",
+  "model_used": "phase5_transformer",
+  "data_samples": 167,
+  "overall_improvement": {
+    "12w": 3.568862275449102,
+    "24w": 4.3293413173652695
+  },
+  "response_rates": {
+    "12w_response": 70.65868263473054,
+    "24w_response": 76.64670658682635,
+    "12w_remission": 68.26347305389223,
+    "24w_remission": 76.64670658682635
+  },
+  "feature_temporal_patterns": {
+    "stable_features": 11,
+    "increasing_features": 8,
+    "decreasing_features": 5
+  },
+  "recovery_patterns": {
+    "Sustained Response": 104,
+    "Non-Response": 25,
+    "Late Response": 24,
+    "Early Response/Late Relapse": 14
+  },
+  "model_performance": {
+    "12w": {
+      "mae": 2.551802366966326,
+      "r2": 0.7968721682602866
+    },
+    "24w": {
+      "mae": 1.90637215668732,
+      "r2": 0.8862821013219175
+    }
+  }
+}
