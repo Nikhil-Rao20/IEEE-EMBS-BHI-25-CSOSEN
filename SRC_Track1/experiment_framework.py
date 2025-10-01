@@ -216,6 +216,125 @@ class ExperimentFramework:
         
         return results
     
+    def evaluate_keras_model(self, model_func, X: pd.DataFrame, y: pd.Series, 
+                           cv_strategy: str = 'kfold', n_splits: int = 5,
+                           epochs: int = 100, batch_size: int = 32, patience: int = 10) -> Dict[str, Any]:
+        """
+        Specialized evaluation for Keras models with training history capture.
+        
+        Args:
+            model_func: Function that creates a fresh Keras model
+            X: Feature matrix
+            y: Target vector
+            cv_strategy: Cross-validation strategy
+            n_splits: Number of CV folds
+            epochs: Training epochs
+            batch_size: Batch size for training
+            patience: Early stopping patience
+            
+        Returns:
+            Dictionary with evaluation results including training history
+        """
+        import tensorflow as tf
+        from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
+        from sklearn.model_selection import train_test_split
+        from sklearn.preprocessing import StandardScaler
+        
+        print(f"📊 Evaluating Keras model with training history capture...")
+        
+        # Get CV strategy
+        cv = self.get_cv_strategy(cv_strategy, n_splits)
+        
+        fold_results = []
+        training_histories = []
+        trained_models = []
+        
+        # Manual cross-validation to capture training history
+        for fold_idx, (train_idx, val_idx) in enumerate(cv.split(X, y)):
+            print(f"   Training fold {fold_idx + 1}/{n_splits}...")
+            
+            X_train_fold = X.iloc[train_idx]
+            X_val_fold = X.iloc[val_idx]
+            y_train_fold = y.iloc[train_idx]
+            y_val_fold = y.iloc[val_idx]
+            
+            # Scale features
+            scaler = StandardScaler()
+            X_train_scaled = scaler.fit_transform(X_train_fold)
+            X_val_scaled = scaler.transform(X_val_fold)
+            
+            # Create fresh model
+            model = model_func(X_train_scaled.shape[1])
+            
+            # Callbacks
+            early_stopping = EarlyStopping(
+                monitor='val_loss', patience=patience, restore_best_weights=True, verbose=0
+            )
+            reduce_lr = ReduceLROnPlateau(
+                monitor='val_loss', factor=0.5, patience=patience//2, min_lr=1e-6, verbose=0
+            )
+            
+            # Train model
+            history = model.fit(
+                X_train_scaled, y_train_fold,
+                validation_data=(X_val_scaled, y_val_fold),
+                epochs=epochs,
+                batch_size=batch_size,
+                callbacks=[early_stopping, reduce_lr],
+                verbose=0
+            )
+            
+            # Evaluate
+            y_pred_train = model.predict(X_train_scaled, verbose=0).flatten()
+            y_pred_val = model.predict(X_val_scaled, verbose=0).flatten()
+            
+            # Calculate metrics
+            from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+            
+            fold_metrics = {
+                'train_mae': mean_absolute_error(y_train_fold, y_pred_train),
+                'val_mae': mean_absolute_error(y_val_fold, y_pred_val),
+                'train_rmse': np.sqrt(mean_squared_error(y_train_fold, y_pred_train)),
+                'val_rmse': np.sqrt(mean_squared_error(y_val_fold, y_pred_val)),
+                'train_r2': r2_score(y_train_fold, y_pred_train),
+                'val_r2': r2_score(y_val_fold, y_pred_val),
+                'epochs_trained': len(history.history['loss'])
+            }
+            
+            fold_results.append(fold_metrics)
+            training_histories.append(history.history)
+            trained_models.append(model)
+        
+        # Aggregate results
+        results = {
+            'cv_scores': {},
+            'mean_scores': {},
+            'std_scores': {},
+            'models': trained_models,
+            'training_histories': training_histories
+        }
+        
+        # Calculate cross-validation statistics
+        for metric in ['mae', 'rmse', 'r2']:
+            train_scores = [fold[f'train_{metric}'] for fold in fold_results]
+            val_scores = [fold[f'val_{metric}'] for fold in fold_results]
+            
+            results['cv_scores'][f'train_{metric}'] = train_scores
+            results['cv_scores'][f'test_{metric}'] = val_scores
+            results['mean_scores'][f'train_{metric}'] = np.mean(train_scores)
+            results['mean_scores'][f'test_{metric}'] = np.mean(val_scores)
+            results['std_scores'][f'train_{metric}'] = np.std(train_scores)
+            results['std_scores'][f'test_{metric}'] = np.std(val_scores)
+        
+        # Add epoch information
+        epochs_trained = [fold['epochs_trained'] for fold in fold_results]
+        results['mean_epochs_trained'] = np.mean(epochs_trained)
+        results['epochs_per_fold'] = epochs_trained
+        
+        print(f"   ✅ Keras evaluation complete. Average epochs: {results['mean_epochs_trained']:.1f}")
+        
+        return results
+    
     def save_results(self, phase_name: str, results: Dict[str, Any]):
         """Save phase results to disk."""
         output_file = self.output_dir / f"{phase_name}_results_{self.experiment_id}.json"
