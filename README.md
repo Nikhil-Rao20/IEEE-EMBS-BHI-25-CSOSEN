@@ -1,3 +1,7 @@
+## IEEE EMBS BHI 2025 - Data Competition
+### Track1 Solution - Team CSOSEN
+
+---
 ## Project Directory Structure
 
 This repository is organized to ensure clarity, reproducibility, and scalability for the IEEE EMBS BHI 2025 Data Competition.

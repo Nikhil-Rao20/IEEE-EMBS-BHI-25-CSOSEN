@@ -1,0 +1,485 @@
+{
+  "mlp_small": {
+    "cv_scores": {
+      "test_mae": [
+        4.783259051943307,
+        6.162560179346201,
+        4.772120293095024
+      ],
+      "train_mae": [
+        3.9966527391397957,
+        4.692348886104776,
+        4.982581639658848
+      ],
+      "test_rmse": [
+        6.166234833656251,
+        8.548642209260436,
+        5.980806106289977
+      ],
+      "train_rmse": [
+        5.651710023631882,
+        6.165155619595828,
+        6.587585291649339
+      ],
+      "test_r2": [
+        -0.06691490288675239,
+        0.05430215305017616,
+        0.15226906859031375
+      ],
+      "train_r2": [
+        0.4761286073472334,
+        0.023758909732067957,
+        0.2404125047396195
+      ],
+      "test_mape": [
+        12893862495.692837,
+        9065641167.461393,
+        8606165405.280228
+      ],
+      "train_mape": [
+        4693997362.507451,
+        9269334823.830173,
+        12408410552.49877
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 5.2393131747948445,
+      "train_mae": 4.557194421634473,
+      "test_rmse": 6.898561049735555,
+      "train_rmse": 6.13481697829235,
+      "test_r2": 0.04655210625124584,
+      "train_r2": 0.24676667393964027,
+      "test_mape": 10188556356.14482,
+      "train_mape": 8790580912.945465
+    },
+    "std_scores": {
+      "test_mae": 0.6528500550391645,
+      "train_mae": 0.4136939256417863,
+      "test_rmse": 1.1692367390730876,
+      "train_rmse": 0.38267127249445904,
+      "test_r2": 0.08964913369038224,
+      "train_r2": 0.18473380385440366,
+      "test_mape": 1922115236.8359082,
+      "train_mape": 3167538128.880594
+    },
+    "models": [
+      "MLPRegressor(alpha=0.1, early_stopping=True, hidden_layer_sizes=(128, 64),\n             learning_rate='adaptive', learning_rate_init=0.01, max_iter=500,\n             random_state=42, validation_fraction=0.2)",
+      "MLPRegressor(alpha=0.1, early_stopping=True, hidden_layer_sizes=(128, 64),\n             learning_rate='adaptive', learning_rate_init=0.01, max_iter=500,\n             random_state=42, validation_fraction=0.2)",
+      "MLPRegressor(alpha=0.1, early_stopping=True, hidden_layer_sizes=(128, 64),\n             learning_rate='adaptive', learning_rate_init=0.01, max_iter=500,\n             random_state=42, validation_fraction=0.2)"
+    ]
+  },
+  "mlp_medium": {
+    "cv_scores": {
+      "test_mae": [
+        4.799212940138333,
+        5.388154871815651,
+        4.687565550149572
+      ],
+      "train_mae": [
+        4.442712142885034,
+        4.255437777764637,
+        4.570691172076969
+      ],
+      "test_rmse": [
+        6.096124388069175,
+        7.5517833974132325,
+        5.967648923957261
+      ],
+      "train_rmse": [
+        5.839520898317461,
+        5.453116265193938,
+        5.9557718002028075
+      ],
+      "test_r2": [
+        -0.04279106381433162,
+        0.26199862892093995,
+        0.1559948144718346
+      ],
+      "train_r2": [
+        0.4407327669173239,
+        0.23623718358204304,
+        0.37912896106147786
+      ],
+      "test_mape": [
+        14365292256.708483,
+        8602687342.638224,
+        6326410887.532278
+      ],
+      "train_mape": [
+        6625989785.639406,
+        9674678162.810003,
+        9401170525.574364
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.958311120701185,
+      "train_mae": 4.42294703090888,
+      "test_rmse": 6.538518903146556,
+      "train_rmse": 5.749469654571402,
+      "test_r2": 0.12506745985948098,
+      "train_r2": 0.3520329705202816,
+      "test_mape": 9764796828.959661,
+      "train_mape": 8567279491.341258
+    },
+    "std_scores": {
+      "test_mae": 0.30734402299046093,
+      "train_mae": 0.12945828258537964,
+      "test_rmse": 0.7184034092930519,
+      "train_rmse": 0.2148605231212753,
+      "test_r2": 0.1263370232009182,
+      "train_r2": 0.08565533814252577,
+      "test_mape": 3383171811.6358185,
+      "train_mape": 1377232950.0377538
+    },
+    "models": [
+      "MLPRegressor(alpha=0.1, early_stopping=True, hidden_layer_sizes=(64, 32, 16),\n             learning_rate='adaptive', max_iter=500, random_state=42,\n             validation_fraction=0.2)",
+      "MLPRegressor(alpha=0.1, early_stopping=True, hidden_layer_sizes=(64, 32, 16),\n             learning_rate='adaptive', max_iter=500, random_state=42,\n             validation_fraction=0.2)",
+      "MLPRegressor(alpha=0.1, early_stopping=True, hidden_layer_sizes=(64, 32, 16),\n             learning_rate='adaptive', max_iter=500, random_state=42,\n             validation_fraction=0.2)"
+    ]
+  },
+  "mlp_large": {
+    "cv_scores": {
+      "test_mae": [
+        5.509669321225375,
+        6.371324011261109,
+        4.005233095925701
+      ],
+      "train_mae": [
+        5.700181579436608,
+        4.931621679355102,
+        4.464536538098259
+      ],
+      "test_rmse": [
+        6.775591147986575,
+        8.744541396566552,
+        6.005729955954572
+      ],
+      "train_rmse": [
+        6.873672227450561,
+        6.246404365474293,
+        6.225986692625692
+      ],
+      "test_r2": [
+        -0.28820222466945045,
+        0.010462641601204803,
+        0.1451888379885098
+      ],
+      "train_r2": [
+        0.22510549911889033,
+        -0.002141821964065427,
+        0.3215127665679771
+      ],
+      "test_mape": [
+        19579730881.629025,
+        11165434179.419119,
+        3470986070.101054
+      ],
+      "train_mape": [
+        11939984135.562584,
+        11654560175.047798,
+        6291020654.143301
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 5.295408809470728,
+      "train_mae": 5.032113265629989,
+      "test_rmse": 7.175287500169233,
+      "train_rmse": 6.448687761850182,
+      "test_r2": -0.04418358169324529,
+      "train_r2": 0.18149214790760068,
+      "test_mape": 11405383710.383066,
+      "train_mape": 9961854988.251228
+    },
+    "std_scores": {
+      "test_mae": 0.9777618081043425,
+      "train_mae": 0.5094301301323828,
+      "test_rmse": 1.1532822456704053,
+      "train_rmse": 0.3006249793816962,
+      "test_r2": 0.1811014643566955,
+      "train_r2": 0.13568263576540396,
+      "test_mape": 6578555904.542663,
+      "train_mape": 2598286004.357254
+    },
+    "models": [
+      "MLPRegressor(alpha=0.001, early_stopping=True,\n             hidden_layer_sizes=(128, 64, 32, 16), learning_rate='adaptive',\n             learning_rate_init=0.01, max_iter=500, random_state=42,\n             validation_fraction=0.2)",
+      "MLPRegressor(alpha=0.001, early_stopping=True,\n             hidden_layer_sizes=(128, 64, 32, 16), learning_rate='adaptive',\n             learning_rate_init=0.01, max_iter=500, random_state=42,\n             validation_fraction=0.2)",
+      "MLPRegressor(alpha=0.001, early_stopping=True,\n             hidden_layer_sizes=(128, 64, 32, 16), learning_rate='adaptive',\n             learning_rate_init=0.01, max_iter=500, random_state=42,\n             validation_fraction=0.2)"
+    ]
+  },
+  "tf_mlp_simple": {
+    "cv_scores": {
+      "test_mae": [
+        5.303944359932627,
+        6.326716844524656,
+        4.248251854560592
+      ],
+      "train_mae": [
+        5.792638359843074,
+        4.935431900325122,
+        4.333825991688562
+      ],
+      "test_rmse": [
+        6.876773845087685,
+        9.177124646328718,
+        6.260681800340766
+      ],
+      "train_rmse": [
+        8.456731476289416,
+        6.862577804651579,
+        5.680787099327788
+      ],
+      "test_r2": [
+        -0.3269639015197754,
+        -0.08986175060272217,
+        0.07107234001159668
+      ],
+      "train_r2": [
+        -0.17292439937591553,
+        -0.20960485935211182,
+        0.4351380467414856
+      ],
+      "test_mape": [
+        6543705174.652815,
+        4129867185.8104267,
+        2429026549.9577036
+      ],
+      "train_mape": [
+        4524431468.030671,
+        4784285304.020945,
+        7190924911.473436
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 5.292971019672625,
+      "train_mae": 5.020632083952253,
+      "test_rmse": 7.438193430585724,
+      "train_rmse": 7.000032126756261,
+      "test_r2": -0.11525110403696696,
+      "train_r2": 0.017536262671152752,
+      "test_mape": 4367532970.140315,
+      "train_mape": 5499880561.175017
+    },
+    "std_scores": {
+      "test_mae": 0.8485652555044212,
+      "train_mae": 0.5985970736300649,
+      "test_rmse": 1.2550706970032053,
+      "train_rmse": 1.13743485205239,
+      "test_r2": 0.16348634365793765,
+      "train_r2": 0.29566850985527693,
+      "test_mape": 1688196042.1135077,
+      "train_mape": 1200445542.2958224
+    },
+    "models": [
+      "KerasRegressorWrapper(model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_mlp_simple at 0x000001A3C93DA7A0>)",
+      "KerasRegressorWrapper(model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_mlp_simple at 0x000001A3C93DA7A0>)",
+      "KerasRegressorWrapper(model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_mlp_simple at 0x000001A3C93DA7A0>)"
+    ]
+  },
+  "tf_mlp_deep": {
+    "cv_scores": {
+      "test_mae": [
+        6.97292710860659,
+        5.7231345084894985,
+        3.8891514751044185
+      ],
+      "train_mae": [
+        7.53635399586412,
+        2.8367365783265046,
+        4.371723044663668
+      ],
+      "test_rmse": [
+        9.13332354748183,
+        8.215657848902982,
+        5.995896170514466
+      ],
+      "train_rmse": [
+        10.799157275336004,
+        3.8690263175278057,
+        6.141643245128548
+      ],
+      "test_r2": [
+        -1.3407084941864014,
+        0.1265404224395752,
+        0.14798563718795776
+      ],
+      "train_r2": [
+        -0.9126905202865601,
+        0.6155211925506592,
+        0.3397711515426636
+      ],
+      "test_mape": [
+        462532618.9628004,
+        3363439646.630617,
+        2662637044.8346243
+      ],
+      "train_mape": [
+        263923726.6916031,
+        3169956618.0205994,
+        5204798240.009689
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 5.528404364066836,
+      "train_mae": 4.914937872951431,
+      "test_rmse": 7.781625855633092,
+      "train_rmse": 6.9366089459974525,
+      "test_r2": -0.3553941448529561,
+      "train_r2": 0.014200607935587565,
+      "test_mape": 2162869770.1426806,
+      "train_mape": 2879559528.2406306
+    },
+    "std_scores": {
+      "test_mae": 1.2664538184251812,
+      "train_mae": 1.9566830317418147,
+      "test_rmse": 1.317105529769085,
+      "train_rmse": 2.8845169003100426,
+      "test_r2": 0.6967774630687065,
+      "train_r2": 0.6650087187206255,
+      "test_mape": 1235891282.2825181,
+      "train_mape": 2027528559.832317
+    },
+    "models": [
+      "KerasRegressorWrapper(epochs=150,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_mlp_deep at 0x000001A3C93DA8E0>)",
+      "KerasRegressorWrapper(epochs=150,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_mlp_deep at 0x000001A3C93DA8E0>)",
+      "KerasRegressorWrapper(epochs=150,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_mlp_deep at 0x000001A3C93DA8E0>)"
+    ]
+  },
+  "tf_resnet": {
+    "cv_scores": {
+      "test_mae": [
+        4.1616948140519,
+        5.736615489636149,
+        4.603806635331024
+      ],
+      "train_mae": [
+        4.089744436848271,
+        3.6065939052684888,
+        4.751691175624728
+      ],
+      "test_rmse": [
+        5.542782339655801,
+        8.308301197475002,
+        6.841499412924315
+      ],
+      "train_rmse": [
+        5.939584354994263,
+        4.975383868708822,
+        6.611514512169804
+      ],
+      "test_r2": [
+        0.13792449235916138,
+        0.1067304015159607,
+        -0.10928034782409668
+      ],
+      "train_r2": [
+        0.4214017391204834,
+        0.3641974925994873,
+        0.2348841428756714
+      ],
+      "test_mape": [
+        8880987275.67423,
+        5136239064.257266,
+        2680760991.4601836
+      ],
+      "train_mape": [
+        3715721242.3160434,
+        5122008878.254939,
+        3422107016.146914
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.834038979673024,
+      "train_mae": 4.149343172580497,
+      "test_rmse": 6.897527650018373,
+      "train_rmse": 5.84216091195763,
+      "test_r2": 0.04512484868367513,
+      "train_r2": 0.34016112486521405,
+      "test_mape": 5565995777.13056,
+      "train_mape": 4086612378.9059653
+    },
+    "std_scores": {
+      "test_mae": 0.6632490647720994,
+      "train_mae": 0.4693796946467308,
+      "test_rmse": 1.1297132411228097,
+      "train_rmse": 0.6714905638740556,
+      "test_r2": 0.10992115767626717,
+      "train_r2": 0.07801928675068573,
+      "test_mape": 2549407724.4279604,
+      "train_mape": 741883531.5601796
+    },
+    "models": [
+      "KerasRegressorWrapper(epochs=200,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_resnet at 0x000001A3C93DB380>)",
+      "KerasRegressorWrapper(epochs=200,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_resnet at 0x000001A3C93DB380>)",
+      "KerasRegressorWrapper(epochs=200,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_resnet at 0x000001A3C93DB380>)"
+    ]
+  },
+  "tf_attention": {
+    "cv_scores": {
+      "test_mae": [
+        4.551185539790562,
+        5.251132096563067,
+        4.5244260907173155
+      ],
+      "train_mae": [
+        4.311675538887849,
+        3.9268330926293724,
+        4.192920197333608
+      ],
+      "test_rmse": [
+        5.626336916296873,
+        7.668612641928364,
+        6.190881450858052
+      ],
+      "train_rmse": [
+        5.995629640274671,
+        5.323286389917951,
+        5.602484080225652
+      ],
+      "test_r2": [
+        0.11173790693283081,
+        0.23898768424987793,
+        0.09167009592056274
+      ],
+      "train_r2": [
+        0.4104312062263489,
+        0.27217209339141846,
+        0.450602650642395
+      ],
+      "test_mape": [
+        13733662335.691902,
+        5729525201.05929,
+        3555479191.7820973
+      ],
+      "train_mape": [
+        5366551709.049701,
+        7373246333.722628,
+        7905752937.93998
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.7755812423569814,
+      "train_mae": 4.143809609616944,
+      "test_rmse": 6.495277003027764,
+      "train_rmse": 5.640466703472758,
+      "test_r2": 0.14746522903442383,
+      "train_r2": 0.37773531675338745,
+      "test_mape": 7672888909.511096,
+      "train_mape": 6881850326.904102
+    },
+    "std_scores": {
+      "test_mae": 0.33644264318580774,
+      "train_mae": 0.16090331357673426,
+      "test_rmse": 0.8610904033109941,
+      "train_rmse": 0.27579384973394944,
+      "test_r2": 0.06523265601524351,
+      "train_r2": 0.07642482943627064,
+      "test_mape": 4376554954.545724,
+      "train_mape": 1093309424.587376
+    },
+    "models": [
+      "KerasRegressorWrapper(epochs=150,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_attention at 0x000001A3C93DAA20>)",
+      "KerasRegressorWrapper(epochs=150,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_attention at 0x000001A3C93DAA20>)",
+      "KerasRegressorWrapper(epochs=150,\n                      model_builder=<function Phase4DeepLearning.create_tensorflow_models.<locals>.build_attention at 0x000001A3C93DAA20>)"
+    ]
+  }
+}

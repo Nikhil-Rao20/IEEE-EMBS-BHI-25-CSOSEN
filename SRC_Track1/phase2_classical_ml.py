@@ -114,10 +114,10 @@ class Phase2ClassicalML:
                 ('knn', KNeighborsRegressor(n_neighbors=7, weights='uniform'))
             ]),
             
-            'radius_neighbors': Pipeline([
-                ('scaler', StandardScaler()),
-                ('radius', RadiusNeighborsRegressor(radius=1.0, weights='distance'))
-            ])
+            # 'radius_neighbors': Pipeline([
+            #     ('scaler', StandardScaler()),
+            #     ('radius', RadiusNeighborsRegressor(radius=1.0, weights='distance'))
+            # ])
         }
         
         self.models = models

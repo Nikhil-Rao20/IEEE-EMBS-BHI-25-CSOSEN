@@ -1,0 +1,437 @@
+{
+  "xgboost": {
+    "cv_scores": {
+      "test_mae": [
+        4.139811603461995,
+        4.135250845376183,
+        4.978423154715336,
+        4.355150034933379,
+        5.545584046479427
+      ],
+      "train_mae": [
+        1.7067312392077052,
+        1.621154733170244,
+        1.6042127925068586,
+        1.7128430209053096,
+        1.6162363539880782
+      ],
+      "test_rmse": [
+        5.119338968187015,
+        6.55452798563478,
+        7.049147611933354,
+        5.6163764583978555,
+        7.274077493688974
+      ],
+      "train_rmse": [
+        2.642520338150409,
+        2.4231879018286877,
+        2.483029220459828,
+        2.6231704764106554,
+        2.5554150583164037
+      ],
+      "test_r2": [
+        -0.002880692481994629,
+        0.33756768703460693,
+        0.3075937032699585,
+        -0.28357625007629395,
+        0.3047947287559509
+      ],
+      "train_r2": [
+        0.882497251033783,
+        0.8823255896568298,
+        0.8725013732910156,
+        0.8853278160095215,
+        0.8620650768280029
+      ],
+      "test_mape": [
+        10396689447.509981,
+        7965778661.4103985,
+        7881489908.454715,
+        3674834367.0995936,
+        12269868470.124987
+      ],
+      "train_mape": [
+        3661327542.1210074,
+        3716525251.4128833,
+        3654175396.0612864,
+        3872694821.842947,
+        3599820598.168557
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.630843936993264,
+      "train_mae": 1.6522356279556392,
+      "test_rmse": 6.322693703568396,
+      "train_rmse": 2.5454645990331968,
+      "test_r2": 0.13269983530044555,
+      "train_r2": 0.8769434213638305,
+      "test_mape": 8437732170.919935,
+      "train_mape": 3700908721.921336
+    },
+    "std_scores": {
+      "test_mae": 0.5514151200610645,
+      "train_mae": 0.04735227596913382,
+      "test_rmse": 0.8286809037759046,
+      "train_rmse": 0.0829539615586608,
+      "test_r2": 0.24242244650663727,
+      "train_r2": 0.008616353756893826,
+      "test_mape": 2889294837.378751,
+      "train_mape": 93513445.4758488
+    },
+    "models": [
+      "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=0.9085081386743783, device=None,\n             early_stopping_rounds=None, enable_categorical=False,\n             eval_metric=None, feature_types=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=0.03221339552022711, max_bin=None,\n             max_cat_threshold=None, max_cat_to_onehot=None,\n             max_delta_step=None, max_depth=9, max_leaves=None,\n             min_child_weight=None, missing=nan, monotone_constraints=None,\n             multi_strategy=None, n_estimators=90, n_jobs=-1,\n             num_parallel_tree=None, random_state=42, ...)",
+      "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=0.9085081386743783, device=None,\n             early_stopping_rounds=None, enable_categorical=False,\n             eval_metric=None, feature_types=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=0.03221339552022711, max_bin=None,\n             max_cat_threshold=None, max_cat_to_onehot=None,\n             max_delta_step=None, max_depth=9, max_leaves=None,\n             min_child_weight=None, missing=nan, monotone_constraints=None,\n             multi_strategy=None, n_estimators=90, n_jobs=-1,\n             num_parallel_tree=None, random_state=42, ...)",
+      "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=0.9085081386743783, device=None,\n             early_stopping_rounds=None, enable_categorical=False,\n             eval_metric=None, feature_types=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=0.03221339552022711, max_bin=None,\n             max_cat_threshold=None, max_cat_to_onehot=None,\n             max_delta_step=None, max_depth=9, max_leaves=None,\n             min_child_weight=None, missing=nan, monotone_constraints=None,\n             multi_strategy=None, n_estimators=90, n_jobs=-1,\n             num_parallel_tree=None, random_state=42, ...)",
+      "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=0.9085081386743783, device=None,\n             early_stopping_rounds=None, enable_categorical=False,\n             eval_metric=None, feature_types=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=0.03221339552022711, max_bin=None,\n             max_cat_threshold=None, max_cat_to_onehot=None,\n             max_delta_step=None, max_depth=9, max_leaves=None,\n             min_child_weight=None, missing=nan, monotone_constraints=None,\n             multi_strategy=None, n_estimators=90, n_jobs=-1,\n             num_parallel_tree=None, random_state=42, ...)",
+      "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=0.9085081386743783, device=None,\n             early_stopping_rounds=None, enable_categorical=False,\n             eval_metric=None, feature_types=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=0.03221339552022711, max_bin=None,\n             max_cat_threshold=None, max_cat_to_onehot=None,\n             max_delta_step=None, max_depth=9, max_leaves=None,\n             min_child_weight=None, missing=nan, monotone_constraints=None,\n             multi_strategy=None, n_estimators=90, n_jobs=-1,\n             num_parallel_tree=None, random_state=42, ...)"
+    ]
+  },
+  "catboost": {
+    "cv_scores": {
+      "test_mae": [
+        3.950622556341372,
+        4.370966197782796,
+        4.631790648222872,
+        3.593966659901337,
+        5.276767585810755
+      ],
+      "train_mae": [
+        2.9144249881806967,
+        2.827324323370854,
+        2.7749115104220174,
+        2.8561170332689305,
+        2.8170735328015466
+      ],
+      "test_rmse": [
+        4.931368830579549,
+        6.855803205404783,
+        6.803007915066703,
+        4.889326718349686,
+        7.435063842904054
+      ],
+      "train_rmse": [
+        4.078584613209978,
+        3.749564216108824,
+        3.7734372876557125,
+        3.9949260094128047,
+        4.018786561293678
+      ],
+      "test_r2": [
+        0.06941412440158534,
+        0.27527136190215407,
+        0.3551039221249721,
+        0.027236131032864708,
+        0.2736823769963267
+      ],
+      "train_r2": [
+        0.7200823570636432,
+        0.7182464091660099,
+        0.7055469415092794,
+        0.7340360978848722,
+        0.6588532694620446
+      ],
+      "test_mape": [
+        9761269505.971354,
+        9352778386.142754,
+        7545662886.926768,
+        3238885756.225793,
+        11490921703.492247
+      ],
+      "train_mape": [
+        5335357123.183353,
+        5513420288.159231,
+        5387132371.962079,
+        5847268940.548495,
+        5351161258.934675
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.364822729611826,
+      "train_mae": 2.8379702776088087,
+      "test_rmse": 6.182914102460955,
+      "train_rmse": 3.9230597375361995,
+      "test_r2": 0.20014158329158058,
+      "train_r2": 0.7073530150171699,
+      "test_mape": 8277903647.751782,
+      "train_mape": 5486867996.557567
+    },
+    "std_scores": {
+      "test_mae": 0.5777082129004474,
+      "train_mae": 0.04626239490971848,
+      "test_rmse": 1.0625355468580557,
+      "train_rmse": 0.13491030074614574,
+      "test_r2": 0.12810310094462127,
+      "train_r2": 0.02587731174898415,
+      "test_mape": 2814501477.77575,
+      "train_mape": 190742193.97876784
+    },
+    "models": [
+      "<catboost.core.CatBoostRegressor object at 0x000002BBA0873EF0>",
+      "<catboost.core.CatBoostRegressor object at 0x000002BBA08780B0>",
+      "<catboost.core.CatBoostRegressor object at 0x000002BBA0B88B30>",
+      "<catboost.core.CatBoostRegressor object at 0x000002BBA4DF26F0>",
+      "<catboost.core.CatBoostRegressor object at 0x000002BBA4D72F00>"
+    ]
+  },
+  "voting_regressor": {
+    "cv_scores": {
+      "test_mae": [
+        4.745538473406823,
+        4.093193064135099,
+        5.054361645774581,
+        4.376845626681764,
+        5.2223031516669005
+      ],
+      "train_mae": [
+        1.2734972787339864,
+        1.2388752724539454,
+        1.2166145291943262,
+        1.2983995039867366,
+        1.1767053812434671
+      ],
+      "test_rmse": [
+        5.729491967198789,
+        6.6094875595143705,
+        6.977394892811666,
+        5.611539879011793,
+        7.006151641710464
+      ],
+      "train_rmse": [
+        1.8811066366246763,
+        1.801352429190433,
+        1.7745651807257803,
+        1.950498316236579,
+        1.769327448685091
+      ],
+      "test_r2": [
+        -0.2561853223124875,
+        0.3264120388401299,
+        0.32161788559646376,
+        -0.28136666232577956,
+        0.3550645584164207
+      ],
+      "train_r2": [
+        0.9404559801478541,
+        0.934971273795981,
+        0.9348783031799647,
+        0.9365989609458852,
+        0.9338746839300918
+      ],
+      "test_mape": [
+        10177826747.276413,
+        8878110846.061823,
+        7769102473.618367,
+        2995860955.2820024,
+        11070301350.110823
+      ],
+      "train_mape": [
+        1859485315.4200797,
+        1899511911.439995,
+        1826061801.9990687,
+        1896939983.4309995,
+        1615650026.2211344
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.698448392333033,
+      "train_mae": 1.2408183931224923,
+      "test_rmse": 6.386813188049417,
+      "train_rmse": 1.8353700022925117,
+      "test_r2": 0.09310849964294947,
+      "train_r2": 0.9361558403999553,
+      "test_mape": 8178240474.469885,
+      "train_mape": 1819529807.7022557
+    },
+    "std_scores": {
+      "test_mae": 0.4178702860396181,
+      "train_mae": 0.04262293967420655,
+      "test_rmse": 0.6025065372221552,
+      "train_rmse": 0.07008909884446254,
+      "test_r2": 0.2958059764733144,
+      "train_r2": 0.0023206262903534306,
+      "test_mape": 2824062013.925345,
+      "train_mape": 105447187.79364574
+    },
+    "models": [
+      "VotingRegressor(estimators=[('rf',\n                             RandomForestRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                            ('et',\n                             ExtraTreesRegressor(max_depth=10,\n                                                 min_samples_split=5, n_jobs=-1,\n                                                 random_state=42)),\n                            ('gb',\n                             GradientBoostingRegressor(max_depth=6,\n                                                       random_state=42))],\n                n_jobs=-1)",
+      "VotingRegressor(estimators=[('rf',\n                             RandomForestRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                            ('et',\n                             ExtraTreesRegressor(max_depth=10,\n                                                 min_samples_split=5, n_jobs=-1,\n                                                 random_state=42)),\n                            ('gb',\n                             GradientBoostingRegressor(max_depth=6,\n                                                       random_state=42))],\n                n_jobs=-1)",
+      "VotingRegressor(estimators=[('rf',\n                             RandomForestRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                            ('et',\n                             ExtraTreesRegressor(max_depth=10,\n                                                 min_samples_split=5, n_jobs=-1,\n                                                 random_state=42)),\n                            ('gb',\n                             GradientBoostingRegressor(max_depth=6,\n                                                       random_state=42))],\n                n_jobs=-1)",
+      "VotingRegressor(estimators=[('rf',\n                             RandomForestRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                            ('et',\n                             ExtraTreesRegressor(max_depth=10,\n                                                 min_samples_split=5, n_jobs=-1,\n                                                 random_state=42)),\n                            ('gb',\n                             GradientBoostingRegressor(max_depth=6,\n                                                       random_state=42))],\n                n_jobs=-1)",
+      "VotingRegressor(estimators=[('rf',\n                             RandomForestRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                            ('et',\n                             ExtraTreesRegressor(max_depth=10,\n                                                 min_samples_split=5, n_jobs=-1,\n                                                 random_state=42)),\n                            ('gb',\n                             GradientBoostingRegressor(max_depth=6,\n                                                       random_state=42))],\n                n_jobs=-1)"
+    ]
+  },
+  "stacking_regressor": {
+    "cv_scores": {
+      "test_mae": [
+        4.464138643338102,
+        4.673968272190188,
+        5.261152126380419,
+        4.160496734685329,
+        5.424515167865518
+      ],
+      "train_mae": [
+        2.435113301177516,
+        2.7852411594754334,
+        1.8289522845409607,
+        2.076903982032554,
+        2.750091326203276
+      ],
+      "test_rmse": [
+        5.377585913840247,
+        7.030507606440205,
+        7.20887383083437,
+        5.3010512063077835,
+        7.465492304772737
+      ],
+      "train_rmse": [
+        3.6763207346654716,
+        4.16487585618402,
+        2.635825385938773,
+        3.059480973799761,
+        4.084449372118919
+      ],
+      "test_r2": [
+        -0.10661410114228853,
+        0.23786465603063955,
+        0.2758598421181838,
+        -0.14349247807622967,
+        0.26772521163307494
+      ],
+      "train_r2": [
+        0.7725750505361999,
+        0.6523742094562106,
+        0.8563270301229073,
+        0.8440085735499417,
+        0.6476142277139393
+      ],
+      "test_mape": [
+        10577401873.684845,
+        9985989053.57859,
+        8532350113.738608,
+        3629851672.570643,
+        12229522924.0978
+      ],
+      "train_mape": [
+        4408698895.868943,
+        5781124410.1925955,
+        3587851345.98399,
+        4391008806.762339,
+        5416870407.02276
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.796854188891912,
+      "train_mae": 2.375260410685948,
+      "test_rmse": 6.476702172439069,
+      "train_rmse": 3.524190464541389,
+      "test_r2": 0.10626862611267603,
+      "train_r2": 0.7545798182758398,
+      "test_mape": 8991023127.534098,
+      "train_mape": 4717110773.166125
+    },
+    "std_scores": {
+      "test_mae": 0.4775525670715767,
+      "train_mae": 0.3740678883081508,
+      "test_rmse": 0.9392223875066694,
+      "train_rmse": 0.5920572366483228,
+      "test_r2": 0.18965578787554851,
+      "train_r2": 0.09006825168845987,
+      "test_mape": 2930766997.073317,
+      "train_mape": 787207189.6754477
+    },
+    "models": [
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)"
+    ]
+  },
+  "advanced_stacking": {
+    "cv_scores": {
+      "test_mae": [
+        4.282981013056569,
+        4.879585455923966,
+        5.22745412744912,
+        4.1727158043826265,
+        5.283298305542618
+      ],
+      "train_mae": [
+        2.1576824062842377,
+        2.599718915305374,
+        1.529766017050355,
+        1.660764829436056,
+        2.392483821711218
+      ],
+      "test_rmse": [
+        5.092294743001573,
+        7.103253302149927,
+        7.169678567050807,
+        5.312482043392715,
+        7.284350399079434
+      ],
+      "train_rmse": [
+        3.2362246053358614,
+        3.849050357861519,
+        2.1793139929240852,
+        2.3903313835049245,
+        3.4454165242325616
+      ],
+      "test_r2": [
+        0.0076872982707375526,
+        0.22201120631000326,
+        0.2837128591461844,
+        -0.14842929853643128,
+        0.30282976880793255
+      ],
+      "train_r2": [
+        0.8237664333726369,
+        0.7030966798691993,
+        0.9017841880896886,
+        0.9047814764688848,
+        0.7492535487055101
+      ],
+      "test_mape": [
+        10702910282.004686,
+        10195422382.10656,
+        8660436203.074318,
+        3795816296.8791075,
+        12488997541.322254
+      ],
+      "train_mape": [
+        4068956260.5101595,
+        5790025261.828008,
+        3100645960.0890822,
+        3727346926.9519367,
+        5024386006.433344
+      ]
+    },
+    "mean_scores": {
+      "test_mae": 4.76920694127098,
+      "train_mae": 2.0680831979574483,
+      "test_rmse": 6.392411810934891,
+      "train_rmse": 3.0200673727717904,
+      "test_r2": 0.1335623667996853,
+      "train_r2": 0.8165364653011838,
+      "test_mape": 9168716541.077385,
+      "train_mape": 4342272083.162506
+    },
+    "std_scores": {
+      "test_mae": 0.4644741458058098,
+      "train_mae": 0.41269697342707873,
+      "test_rmse": 0.9758633484225424,
+      "train_rmse": 0.6353412156171975,
+      "test_r2": 0.17571775843177792,
+      "train_r2": 0.0806253117319899,
+      "test_mape": 2951560508.456414,
+      "train_mape": 954540579.2114929
+    },
+    "models": [
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42)),\n                              ('xgb',\n                               XGBRegressor(base_score=None, booster=None,\n                                            callbacks=None,\n                                            colsample_byl...\n                                            interaction_constraints=None,\n                                            learning_rate=0.1, max_bin=None,\n                                            max_cat_threshold=None,\n                                            max_cat_to_onehot=None,\n                                            max_delta_step=None, max_depth=6,\n                                            max_leaves=None,\n                                            min_child_weight=None, missing=nan,\n                                            monotone_constraints=None,\n                                            multi_strategy=None,\n                                            n_estimators=100, n_jobs=-1,\n                                            num_parallel_tree=None,\n                                            random_state=42, ...))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42)),\n                              ('xgb',\n                               XGBRegressor(base_score=None, booster=None,\n                                            callbacks=None,\n                                            colsample_byl...\n                                            interaction_constraints=None,\n                                            learning_rate=0.1, max_bin=None,\n                                            max_cat_threshold=None,\n                                            max_cat_to_onehot=None,\n                                            max_delta_step=None, max_depth=6,\n                                            max_leaves=None,\n                                            min_child_weight=None, missing=nan,\n                                            monotone_constraints=None,\n                                            multi_strategy=None,\n                                            n_estimators=100, n_jobs=-1,\n                                            num_parallel_tree=None,\n                                            random_state=42, ...))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42)),\n                              ('xgb',\n                               XGBRegressor(base_score=None, booster=None,\n                                            callbacks=None,\n                                            colsample_byl...\n                                            interaction_constraints=None,\n                                            learning_rate=0.1, max_bin=None,\n                                            max_cat_threshold=None,\n                                            max_cat_to_onehot=None,\n                                            max_delta_step=None, max_depth=6,\n                                            max_leaves=None,\n                                            min_child_weight=None, missing=nan,\n                                            monotone_constraints=None,\n                                            multi_strategy=None,\n                                            n_estimators=100, n_jobs=-1,\n                                            num_parallel_tree=None,\n                                            random_state=42, ...))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42)),\n                              ('xgb',\n                               XGBRegressor(base_score=None, booster=None,\n                                            callbacks=None,\n                                            colsample_byl...\n                                            interaction_constraints=None,\n                                            learning_rate=0.1, max_bin=None,\n                                            max_cat_threshold=None,\n                                            max_cat_to_onehot=None,\n                                            max_delta_step=None, max_depth=6,\n                                            max_leaves=None,\n                                            min_child_weight=None, missing=nan,\n                                            monotone_constraints=None,\n                                            multi_strategy=None,\n                                            n_estimators=100, n_jobs=-1,\n                                            num_parallel_tree=None,\n                                            random_state=42, ...))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)",
+      "StackingRegressor(cv=5,\n                  estimators=[('rf',\n                               RandomForestRegressor(max_depth=10,\n                                                     min_samples_split=5,\n                                                     n_jobs=-1,\n                                                     random_state=42)),\n                              ('et',\n                               ExtraTreesRegressor(max_depth=10,\n                                                   min_samples_split=5,\n                                                   n_jobs=-1,\n                                                   random_state=42)),\n                              ('gb',\n                               GradientBoostingRegressor(max_depth=6,\n                                                         random_state=42)),\n                              ('xgb',\n                               XGBRegressor(base_score=None, booster=None,\n                                            callbacks=None,\n                                            colsample_byl...\n                                            interaction_constraints=None,\n                                            learning_rate=0.1, max_bin=None,\n                                            max_cat_threshold=None,\n                                            max_cat_to_onehot=None,\n                                            max_delta_step=None, max_depth=6,\n                                            max_leaves=None,\n                                            min_child_weight=None, missing=nan,\n                                            monotone_constraints=None,\n                                            multi_strategy=None,\n                                            n_estimators=100, n_jobs=-1,\n                                            num_parallel_tree=None,\n                                            random_state=42, ...))],\n                  final_estimator=RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0]),\n                  n_jobs=-1)"
+    ]
+  }
+}

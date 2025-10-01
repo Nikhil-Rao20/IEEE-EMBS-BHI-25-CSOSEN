@@ -209,3 +209,6 @@ __marimo__/
 # Ignore all .xlsx and .pdf files in Track1_Data and its subfolders
 Track1_Data/**/*.xlsx
 Track1_Data/**/*.pdf
+
+# Ignore the Trained Models Folder
+All_Trained_Models/

@@ -75,11 +75,11 @@ class Phase1BaselineModels:
             ),
             
             # Polynomial Regression
-            'polynomial_2': Pipeline([
-                ('scaler', StandardScaler()),
-                ('poly', PolynomialFeatures(degree=2, include_bias=False)),
-                ('linear', LinearRegression())
-            ]),
+            # 'polynomial_2': Pipeline([
+            #     ('scaler', StandardScaler()),
+            #     ('poly', PolynomialFeatures(degree=2, include_bias=False)),
+            #     ('linear', LinearRegression())
+            # ]),
             
             'polynomial_3': Pipeline([
                 ('scaler', StandardScaler()),

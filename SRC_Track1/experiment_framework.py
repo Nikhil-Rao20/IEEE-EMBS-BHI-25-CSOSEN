@@ -216,6 +216,40 @@ class ExperimentFramework:
         
         return results
     
+    def evaluate_model_with_hyperparams(self, model, X: pd.DataFrame, y: pd.Series, 
+                                       cv_strategy: str = 'kfold', n_splits: int = 5,
+                                       hyperparameter_info: Dict[str, Any] = None) -> Dict[str, Any]:
+        """
+        Enhanced model evaluation that includes hyperparameter information.
+        
+        Args:
+            model: Scikit-learn compatible model
+            X: Feature matrix
+            y: Target vector
+            cv_strategy: Cross-validation strategy
+            n_splits: Number of CV folds
+            hyperparameter_info: Dictionary containing hyperparameter search results
+            
+        Returns:
+            Dictionary with evaluation results including hyperparameter data
+        """
+        # Get base evaluation results
+        results = self.evaluate_model(model, X, y, cv_strategy, n_splits)
+        
+        # Add hyperparameter information if provided
+        if hyperparameter_info:
+            results['hyperparameter_info'] = hyperparameter_info
+            
+            # Extract model parameters
+            if hasattr(model, 'get_params'):
+                results['model_parameters'] = model.get_params()
+            
+            # Add search metadata
+            if 'search_type' in hyperparameter_info:
+                results['optimization_method'] = hyperparameter_info['search_type']
+        
+        return results
+    
     def evaluate_keras_model(self, model_func, X: pd.DataFrame, y: pd.Series, 
                            cv_strategy: str = 'kfold', n_splits: int = 5,
                            epochs: int = 100, batch_size: int = 32, patience: int = 10) -> Dict[str, Any]:
