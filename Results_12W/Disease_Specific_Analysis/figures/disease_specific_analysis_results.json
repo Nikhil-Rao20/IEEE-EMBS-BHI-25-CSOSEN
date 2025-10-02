@@ -1,0 +1,67 @@
+{
+  "analysis_date": "2025-10-02 16:13:23",
+  "model_used": "phase5_transformer",
+  "overall_performance": {
+    "mae": 3.1972192057802635,
+    "r2": 0.6504923105239868,
+    "n_samples": 167
+  },
+  "disease_groups": {
+    "Cancer": {
+      "n_samples": 108,
+      "mean_bdi": 8.50925925925926,
+      "mae": 7.206487013360369,
+      "r2": -0.5758650233037095
+    },
+    "Cardiovascular": {
+      "n_samples": 39,
+      "mean_bdi": 5.384615384615385,
+      "mae": 7.691233015811695,
+      "r2": -2.4028945332379275
+    },
+    "Renal": {
+      "n_samples": 10,
+      "mean_bdi": 3.5,
+      "mae": 11.621621833364646,
+      "r2": -5.006228132384945
+    },
+    "Musculoskeletal": {
+      "n_samples": 10,
+      "mean_bdi": 8.5,
+      "mae": 7.797006188243266,
+      "r2": -0.33751340966802346
+    }
+  },
+  "statistical_tests": {
+    "anova_p_value": 0.03368108007624912,
+    "kruskal_wallis_p_value": 0.014938400878156354,
+    "significant_differences": true
+  },
+  "top_medical_features": [
+    {
+      "feature": "condition_type_breast",
+      "importance": 0.05160147403492781,
+      "rank": 6
+    },
+    {
+      "feature": "condition_cancer",
+      "importance": 0.03083889253449065,
+      "rank": 11
+    },
+    {
+      "feature": "condition_acute_coronary_syndrome",
+      "importance": 0.025578583741483564,
+      "rank": 12
+    },
+    {
+      "feature": "condition_type_prostate",
+      "importance": 0.02451557104865052,
+      "rank": 13
+    },
+    {
+      "feature": "condition_renal_insufficiency",
+      "importance": 0.022218397530528067,
+      "rank": 14
+    }
+  ]
+}

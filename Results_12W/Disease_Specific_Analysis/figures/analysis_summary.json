@@ -1,0 +1,11 @@
+{
+  "analysis_completed": true,
+  "total_patients": 167,
+  "disease_groups": 4,
+  "statistical_significance": true,
+  "model_r2_score": 0.9155444851937959,
+  "plots_generated": 5,
+  "high_priority_group": "Cancer",
+  "high_priority_patients": 108,
+  "key_recommendation": "Implement disease-specific depression treatment protocols"
+}
