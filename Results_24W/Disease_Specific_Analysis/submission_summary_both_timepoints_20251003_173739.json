@@ -1,0 +1,26 @@
+{
+  "submission_info": {
+    "creation_date": "2025-10-03 17:37:39",
+    "total_predictions": 43,
+    "patient_id_source": "hospital_center_id column",
+    "test_data_file": "c:\\Users\\nikhi\\Desktop\\IEEE_EMBS_BHI_25_CSOSEN\\Track1_Data\\processed\\test_corrected_features.xlsx"
+  },
+  "models": {
+    "12W": {
+      "target_column": "bdi_ii_after_intervention_12w",
+      "training_mae": 0.011471789902685613,
+      "training_r2": 0.999995711826721,
+      "training_samples": 167,
+      "prediction_min": -0.48179586444319966,
+      "prediction_max": 13.467086792980659,
+      "prediction_mean": 5.414648586826255,
+      "prediction_std": 3.770539864673042
+    }
+  },
+  "files_created": {
+    "individual_submissions": [
+      "submission_catboost_12w_R2_1p000_20251003_173739.csv"
+    ],
+    "combined_submission": "submission_combined_12w_24w_20251003_173739.csv"
+  }
+}

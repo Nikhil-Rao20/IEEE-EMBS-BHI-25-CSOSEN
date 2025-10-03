@@ -1,0 +1,24 @@
+{
+  "Model Information": {
+    "Model Type": "CatBoostRegressor",
+    "Training R\u00b2 Score": 0.8799966223165923,
+    "Training MAE": 2.02537644824912,
+    "Number of Training Features": 24,
+    "Number of Test Features": 24,
+    "Training Samples": 167,
+    "Test Samples": 43
+  },
+  "Prediction Statistics": {
+    "Min Prediction": -0.3232645111951653,
+    "Max Prediction": 10.221034673675579,
+    "Mean Prediction": 4.752381692870975,
+    "Std Prediction": 2.8505059990701462,
+    "Median Prediction": 4.869938725554947
+  },
+  "File Information": {
+    "Submission Filename": "submission_catboost_catboost_R2_0p200_20251003_173359.csv",
+    "Creation Date": "2025-10-03 17:33:59",
+    "Test Data File": "c:\\Users\\nikhi\\Desktop\\IEEE_EMBS_BHI_25_CSOSEN\\Track1_Data\\processed\\test_corrected_features.xlsx",
+    "Training Data File": "c:\\Users\\nikhi\\Desktop\\IEEE_EMBS_BHI_25_CSOSEN\\Track1_Data\\processed\\train_corrected_features.xlsx"
+  }
+}

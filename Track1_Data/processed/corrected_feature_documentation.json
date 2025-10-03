@@ -1,16 +1,16 @@
 {
   "creation_info": {
-    "created_date": "2025-10-01T00:29:24.675580",
+    "created_date": "2025-10-03T17:28:20.452561",
     "created_by": "Corrected Simple Feature Engineering Pipeline",
     "approach": "Complete medical condition encoding with proper one-hot encoding",
     "key_improvement": "Includes ALL 4 real medical conditions + proper condition type encoding"
   },
   "dataset_info": {
-    "total_samples": 167,
+    "total_samples": 43,
     "total_features": 24,
     "total_targets": 2,
     "final_shape": [
-      167,
+      43,
       26
     ]
   },
@@ -23,10 +23,10 @@
       "condition_lower_limb_amputation"
     ],
     "prevalence": {
-      "condition_cancer": 108,
-      "condition_acute_coronary_syndrome": 39,
-      "condition_renal_insufficiency": 10,
-      "condition_lower_limb_amputation": 10
+      "condition_cancer": 19,
+      "condition_acute_coronary_syndrome": 13,
+      "condition_renal_insufficiency": 9,
+      "condition_lower_limb_amputation": 2
     },
     "note": "ALL 4 real medical diagnoses properly encoded as binary columns"
   },
@@ -42,13 +42,13 @@
       "condition_type_dialysis"
     ],
     "prevalence": {
-      "condition_type_breast": 67,
-      "condition_type_prostate": 41,
-      "condition_type_revascularization": 31,
-      "condition_type_no_prosthesis": 10,
-      "condition_type_predialysis": 9,
-      "condition_type_percutaneous_coronary_intervention": 8,
-      "condition_type_dialysis": 1
+      "condition_type_breast": 11,
+      "condition_type_prostate": 8,
+      "condition_type_revascularization": 13,
+      "condition_type_no_prosthesis": 2,
+      "condition_type_predialysis": 8,
+      "condition_type_percutaneous_coronary_intervention": 1,
+      "condition_type_dialysis": 0
     },
     "note": "Proper one-hot encoding for all condition subtypes"
   },
@@ -122,9 +122,9 @@
     "bdi_ii_follow_up_24w"
   ],
   "quality_checks": {
-    "missing_values": 0,
+    "missing_values": 86,
     "infinite_values": 0,
     "all_conditions_present": true,
-    "data_quality_score": 100
+    "data_quality_score": 85
   }
 }
