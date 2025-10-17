@@ -1,0 +1,32 @@
+Phase,Model,Parameters,Training_Speed,Inference_Speed,GPU_Required,Complexity_Class,12W_R2,12W_MAE
+phase1,linear_regression,Low,Fast,Fast,No,O(n*d),-0.02644845215291689,5.179044055474725
+phase1,ridge_regression,Low,Fast,Fast,No,O(n*d),0.14921613760492658,4.7857797645521085
+phase1,lasso_regression,Low,Fast,Fast,No,O(n*d*iter),0.17903319250484567,4.70915109261414
+phase1,elastic_net,Low,Fast,Fast,No,O(n*d*iter),0.16162586085189973,4.773697812863221
+phase1,bayesian_ridge,Low,Medium,Fast,No,O(n*d*iter),0.13807353124150495,4.793784637499474
+phase1,huber_regressor,Low,Medium,Fast,No,O(n*d*iter),0.1077704600247305,4.785467038989781
+phase2,random_forest,Medium,Medium,Medium,No,O(n*d*log(n)*trees),0.09099217824539478,4.818156203904512
+phase2,ada_boost,Medium,Medium,Medium,No,O(n*d*estimators),0.0889576491136608,4.828865410248597
+phase2,svr_linear,Low,Medium,Fast,No,O(n²*d),0.13794088775134133,4.66791352911459
+phase2,svr_rbf,Medium,Slow,Medium,No,O(n²*d),0.15155402539286966,4.7272258359283885
+phase2,nu_svr,Medium,Slow,Medium,No,O(n²*d),0.143549194211776,4.735672639368895
+phase2,knn_regressor,Low,Fast,Slow,No,O(n*d) inference,0.12511676089346904,5.014977050180099
+phase2,knn_uniform,Low,Fast,Slow,No,O(n*d) inference,0.14664408666048828,4.950526656943769
+phase3,xgboost,High,Slow,Medium,No,O(n*d*trees*depth),0.09350384473800659,4.999033802673354
+phase3,catboost,High,Slow,Medium,No,O(n*d*trees*depth),0.09944685253518504,4.90996932082646
+phase3,voting_regressor,High,Slow,Medium,No,O(k*model_complexity),-0.17057809187395617,5.389443501886137
+phase3,stacking_regressor,High,Slow,Medium,No,O(k*model_complexity),0.06780668647433197,5.184297944881714
+phase3,advanced_stacking,High,Slow,Medium,No,O(k*model_complexity),0.042326449808813636,5.259722870665478
+phase4,mlp_small,High,Slow,Fast,Yes,O(layers*neurons²*epochs),0.04655210625124584,5.2393131747948445
+phase4,mlp_medium,Very High,Very Slow,Fast,Yes,O(layers*neurons²*epochs),0.12506745985948098,4.958311120701185
+phase4,mlp_large,Very High,Very Slow,Fast,Yes,O(layers*neurons²*epochs),-0.04418358169324529,5.295408809470728
+phase4,tf_mlp_simple,High,Slow,Fast,Yes,O(layers*neurons²*epochs),-0.11525110403696696,5.292971019672625
+phase4,tf_resnet,Very High,Very Slow,Medium,Yes,O(depth*filters²*epochs),0.04512484868367513,4.834038979673024
+phase4,tf_attention,Very High,Very Slow,Medium,Yes,O(seq²*d*heads*epochs),0.14746522903442383,4.7755812423569814
+phase5,lstm_simple,Very High,Very Slow,Medium,Yes,O(seq*hidden²*epochs),0.05329825480779012,5.328310666207379
+phase5,lstm_bidirectional,Very High,Very Slow,Medium,Yes,O(seq*hidden²*epochs),0.12489418188730876,5.128749630774981
+phase5,lstm_stacked,Very High,Very Slow,Medium,Yes,O(seq*hidden²*epochs),0.13272631168365479,5.032970272357482
+phase5,gru,Very High,Very Slow,Medium,Yes,O(seq*hidden²*epochs),0.0800674557685852,5.222035073752355
+phase5,transformer,Very High,Very Slow,Slow,Yes,O(seq²*d*heads*layers*epochs),0.24668667713801065,4.5292608217759565
+phase5,rf_trajectory,High,Slow,Medium,No,O(seq*n*d*trees),0.001256757099935853,5.118358932007266
+phase5,ridge_trajectory,Medium,Medium,Fast,No,O(seq*n*d),0.06826715635254228,4.991892117661659

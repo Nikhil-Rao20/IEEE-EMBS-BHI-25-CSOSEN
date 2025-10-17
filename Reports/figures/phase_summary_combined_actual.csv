@@ -1,0 +1,11 @@
+Phase,Timepoint,Num_Models,Mean_R2,Std_R2,Best_R2,Mean_MAE,Std_MAE,Best_MAE,Best_Model
+Phase 1: Linear,12W,9,-1.2372,3.817,0.179,6.0292,3.0394,4.7092,lasso_regression
+Phase 2: Classical ML,12W,10,0.1029,0.0437,0.1516,4.8988,0.1781,4.6679,svr_rbf
+Phase 3: Ensembles,12W,5,0.0265,0.1125,0.0994,5.1485,0.1943,4.91,catboost
+Phase 4: Deep Learning,12W,7,-0.0215,0.1732,0.1475,5.132,0.2791,4.7756,tf_attention
+Phase 5: Time-Series,12W,12,-0.1801,0.5396,0.2467,5.6632,1.158,4.5293,transformer
+Phase 1: Linear,24W,9,-1.028,2.8577,0.0938,5.7851,2.3826,4.6758,lasso_regression
+Phase 2: Classical ML,24W,10,0.0664,0.0556,0.1388,4.6266,0.1207,4.4867,random_forest
+Phase 3: Ensembles,24W,5,0.1332,0.0413,0.2001,4.652,0.1731,4.3648,catboost
+Phase 4: Deep Learning,24W,7,-0.0115,0.2075,0.1677,4.9049,0.3539,4.6223,mlp_large
+Phase 5: Time-Series,24W,12,-0.1995,0.4647,0.1549,5.393,0.8567,4.7989,rf_trajectory

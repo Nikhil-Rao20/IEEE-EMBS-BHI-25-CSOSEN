@@ -1,0 +1,463 @@
+{
+  "analysis_info": {
+    "date": "2025-10-04T17:23:52.403179",
+    "n_patients": 167,
+    "therapy_features": [
+      "mindfulness_therapies_started",
+      "mindfulness_therapies_completed",
+      "therapy_completion_rate",
+      "therapy_engagement"
+    ]
+  },
+  "condition_therapy_stats": {
+    "Cancer": {
+      "n_with": 108,
+      "n_without": 59,
+      "prevalence_pct": 64.67065868263472,
+      "therapy_metrics": {
+        "mindfulness_therapies_started": {
+          "with_mean": 36.888888888888886,
+          "with_std": 35.56101334020069,
+          "without_mean": 16.271186440677965,
+          "without_std": 22.717022713856714,
+          "difference": 20.61770244821092,
+          "p_value": 8.766201422115676e-07,
+          "cohens_d": 0.6515107526001549,
+          "n_with": 108,
+          "n_without": 59
+        },
+        "mindfulness_therapies_completed": {
+          "with_mean": 32.092592592592595,
+          "with_std": 32.92430770837041,
+          "without_mean": 13.677966101694915,
+          "without_std": 21.218437556607665,
+          "difference": 18.414626490897682,
+          "p_value": 5.948732074967518e-07,
+          "cohens_d": 0.6274871829905044,
+          "n_with": 108,
+          "n_without": 59
+        },
+        "therapy_completion_rate": {
+          "with_mean": 0.7722927238655788,
+          "with_std": 0.24905768775217388,
+          "without_mean": 0.4985528461334842,
+          "without_std": 0.40512685057664927,
+          "difference": 0.27373987773209457,
+          "p_value": 0.00022281170104785695,
+          "cohens_d": 0.8747927324765377,
+          "n_with": 108,
+          "n_without": 59
+        },
+        "therapy_engagement": {
+          "with_mean": 1.5,
+          "with_std": 0.6903879445780405,
+          "without_mean": 0.8813559322033898,
+          "without_std": 0.9113223768657671,
+          "difference": 0.6186440677966102,
+          "p_value": 1.6627399387126803e-05,
+          "cohens_d": 0.7979832615063731,
+          "n_with": 108,
+          "n_without": 59
+        }
+      }
+    },
+    "Acute Coronary Syndrome": {
+      "n_with": 39,
+      "n_without": 128,
+      "prevalence_pct": 23.353293413173652,
+      "therapy_metrics": {
+        "mindfulness_therapies_started": {
+          "with_mean": 16.256410256410255,
+          "with_std": 22.76044346612405,
+          "without_mean": 33.671875,
+          "without_std": 34.6762550936925,
+          "difference": -17.415464743589745,
+          "p_value": 0.00016905798462037814,
+          "cohens_d": -0.5387829986162999,
+          "n_with": 39,
+          "n_without": 128
+        },
+        "mindfulness_therapies_completed": {
+          "with_mean": 13.846153846153847,
+          "with_std": 21.191530658730603,
+          "without_mean": 29.1640625,
+          "without_std": 32.11219930176168,
+          "difference": -15.317908653846153,
+          "p_value": 0.0001869831657626277,
+          "cohens_d": -0.5114127121746834,
+          "n_with": 39,
+          "n_without": 128
+        },
+        "therapy_completion_rate": {
+          "with_mean": 0.49134731993529684,
+          "with_std": 0.4035671580453499,
+          "without_mean": 0.7317163017334491,
+          "without_std": 0.29563380047896326,
+          "difference": -0.2403689817981523,
+          "p_value": 0.0035631775378851304,
+          "cohens_d": -0.7425743733595478,
+          "n_with": 39,
+          "n_without": 128
+        },
+        "therapy_engagement": {
+          "with_mean": 0.8205128205128205,
+          "with_std": 0.9139790067782241,
+          "without_mean": 1.421875,
+          "without_std": 0.7488508256355988,
+          "difference": -0.6013621794871795,
+          "p_value": 0.00022006537654915896,
+          "cohens_d": -0.7612702915006784,
+          "n_with": 39,
+          "n_without": 128
+        }
+      }
+    },
+    "Renal Insufficiency": {
+      "n_with": 10,
+      "n_without": 157,
+      "prevalence_pct": 5.9880239520958085,
+      "therapy_metrics": {
+        "mindfulness_therapies_started": {
+          "with_mean": 19.9,
+          "with_std": 24.7271780301217,
+          "without_mean": 30.222929936305732,
+          "without_std": 33.48911011789727,
+          "difference": -10.322929936305734,
+          "p_value": 0.3783311900261008,
+          "cohens_d": -0.31214354479090567,
+          "n_with": 10,
+          "n_without": 157
+        },
+        "mindfulness_therapies_completed": {
+          "with_mean": 15.9,
+          "with_std": 23.173020711355026,
+          "without_mean": 26.203821656050955,
+          "without_std": 30.926865520811326,
+          "difference": -10.303821656050955,
+          "p_value": 0.288556656385766,
+          "cohens_d": -0.3372253378442646,
+          "n_with": 10,
+          "n_without": 157
+        },
+        "therapy_completion_rate": {
+          "with_mean": 0.5874727574421856,
+          "with_std": 0.3642224611446105,
+          "without_mean": 0.6811942963371734,
+          "without_std": 0.3372136220718506,
+          "difference": -0.0937215388949878,
+          "p_value": 0.3440881622095402,
+          "cohens_d": -0.2766749862575494,
+          "n_with": 10,
+          "n_without": 157
+        },
+        "therapy_engagement": {
+          "with_mean": 1.1,
+          "with_std": 0.8755950357709131,
+          "without_mean": 1.2929936305732483,
+          "without_std": 0.8263384364155112,
+          "difference": -0.19299363057324825,
+          "p_value": 0.4571491572061217,
+          "cohens_d": -0.23277467917008923,
+          "n_with": 10,
+          "n_without": 157
+        }
+      }
+    },
+    "Lower Limb Amputation": {
+      "n_with": 10,
+      "n_without": 157,
+      "prevalence_pct": 5.9880239520958085,
+      "therapy_metrics": {
+        "mindfulness_therapies_started": {
+          "with_mean": 12.7,
+          "with_std": 22.321140950527894,
+          "without_mean": 30.681528662420384,
+          "without_std": 33.391431078093724,
+          "difference": -17.981528662420384,
+          "p_value": 0.020770066716190576,
+          "cohens_d": -0.5468197164802236,
+          "n_with": 10,
+          "n_without": 157
+        },
+        "mindfulness_therapies_completed": {
+          "with_mean": 10.8,
+          "with_std": 21.29580031628563,
+          "without_mean": 26.528662420382165,
+          "without_std": 30.86707658313556,
+          "difference": -15.728662420382165,
+          "p_value": 0.01987171549543024,
+          "cohens_d": -0.5170032961487449,
+          "n_with": 10,
+          "n_without": 157
+        },
+        "therapy_completion_rate": {
+          "with_mean": 0.43773448699771295,
+          "with_std": 0.47357765097081955,
+          "without_mean": 0.6907317657922354,
+          "without_std": 0.3241903259888535,
+          "difference": -0.25299727879452244,
+          "p_value": 0.19795597616605365,
+          "cohens_d": -0.757327884871509,
+          "n_with": 10,
+          "n_without": 157
+        },
+        "therapy_engagement": {
+          "with_mean": 0.9,
+          "with_std": 0.9944289260117534,
+          "without_mean": 1.305732484076433,
+          "without_std": 0.8138419520080523,
+          "difference": -0.40573248407643303,
+          "p_value": 0.1817358400064606,
+          "cohens_d": -0.49196845091365704,
+          "n_with": 10,
+          "n_without": 157
+        }
+      }
+    }
+  },
+  "correlations_12w": {
+    "Cancer": {
+      "mindfulness_therapies_started": {
+        "pearson_r": -0.00755651405855845,
+        "pearson_p": 0.938132788072573,
+        "spearman_r": 0.017505228299681274,
+        "spearman_p": 0.8572965618882447,
+        "n_samples": 108
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": -0.029636683744408077,
+        "pearson_p": 0.7607649099370698,
+        "spearman_r": -0.0076693240233770815,
+        "spearman_p": 0.9372110505203394,
+        "n_samples": 108
+      },
+      "therapy_completion_rate": {
+        "pearson_r": -0.17222270765546158,
+        "pearson_p": 0.07469915618757442,
+        "spearman_r": -0.16628507831405065,
+        "spearman_p": 0.08543732397711347,
+        "n_samples": 108
+      },
+      "therapy_engagement": {
+        "pearson_r": -0.13303793785804602,
+        "pearson_p": 0.16987900460416502,
+        "spearman_r": -0.13637904347648558,
+        "spearman_p": 0.1593130508760027,
+        "n_samples": 108
+      }
+    },
+    "Acute Coronary Syndrome": {
+      "mindfulness_therapies_started": {
+        "pearson_r": -0.15148773339287858,
+        "pearson_p": 0.3572650490742272,
+        "spearman_r": -0.030726680482682567,
+        "spearman_p": 0.852688975044457,
+        "n_samples": 39
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": -0.1796684804179025,
+        "pearson_p": 0.2737534557446709,
+        "spearman_r": -0.0808093231455578,
+        "spearman_p": 0.6248162124208021,
+        "n_samples": 39
+      },
+      "therapy_completion_rate": {
+        "pearson_r": -0.13246346978347723,
+        "pearson_p": 0.4214713519706238,
+        "spearman_r": -0.052818793557175,
+        "spearman_p": 0.7494654145945707,
+        "n_samples": 39
+      },
+      "therapy_engagement": {
+        "pearson_r": -0.11436877599504909,
+        "pearson_p": 0.48813702834957107,
+        "spearman_r": -0.07102582121371581,
+        "spearman_p": 0.667437037601465,
+        "n_samples": 39
+      }
+    },
+    "Renal Insufficiency": {
+      "mindfulness_therapies_started": {
+        "pearson_r": -0.08316119370744937,
+        "pearson_p": 0.8193377626125906,
+        "spearman_r": 0.22124616267552524,
+        "spearman_p": 0.5390268972899623,
+        "n_samples": 10
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": -0.0668471465637229,
+        "pearson_p": 0.8544235432468584,
+        "spearman_r": 0.2684386854504486,
+        "spearman_p": 0.45330622652090125,
+        "n_samples": 10
+      },
+      "therapy_completion_rate": {
+        "pearson_r": 0.41842918247980354,
+        "pearson_p": 0.22880897693987362,
+        "spearman_r": 0.40344888487889896,
+        "spearman_p": 0.24762242916423294,
+        "n_samples": 10
+      },
+      "therapy_engagement": {
+        "pearson_r": 0.4655631910248032,
+        "pearson_p": 0.17509619634470425,
+        "spearman_r": 0.5258011380119806,
+        "spearman_p": 0.11852345402960252,
+        "n_samples": 10
+      }
+    },
+    "Lower Limb Amputation": {
+      "mindfulness_therapies_started": {
+        "pearson_r": -0.06574064209919227,
+        "pearson_p": 0.8568122479496217,
+        "spearman_r": -0.03738335897094201,
+        "spearman_p": 0.918338089821702,
+        "n_samples": 10
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": -0.003610789154144877,
+        "pearson_p": 0.9921015017048733,
+        "spearman_r": 0.1112633116685485,
+        "spearman_p": 0.7596022255679635,
+        "n_samples": 10
+      },
+      "therapy_completion_rate": {
+        "pearson_r": 0.2667599278404582,
+        "pearson_p": 0.45624474243724794,
+        "spearman_r": 0.1112633116685485,
+        "spearman_p": 0.7596022255679635,
+        "n_samples": 10
+      },
+      "therapy_engagement": {
+        "pearson_r": 0.3544082231497401,
+        "pearson_p": 0.31499047919349465,
+        "spearman_r": 0.2306211294743359,
+        "spearman_p": 0.5215024078859012,
+        "n_samples": 10
+      }
+    }
+  },
+  "correlations_24w": {
+    "Cancer": {
+      "mindfulness_therapies_started": {
+        "pearson_r": -0.14259863179806598,
+        "pearson_p": 0.14096167155885736,
+        "spearman_r": -0.10075855676034627,
+        "spearman_p": 0.2994691365021963,
+        "n_samples": 108
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": -0.16434561717135313,
+        "pearson_p": 0.0891999399783472,
+        "spearman_r": -0.12084529971226322,
+        "spearman_p": 0.21283080972582102,
+        "n_samples": 108
+      },
+      "therapy_completion_rate": {
+        "pearson_r": -0.20842932861169905,
+        "pearson_p": 0.030411429647805875,
+        "spearman_r": -0.180937933676887,
+        "spearman_p": 0.06093306199864747,
+        "n_samples": 108
+      },
+      "therapy_engagement": {
+        "pearson_r": -0.2322173993464252,
+        "pearson_p": 0.015591114899767871,
+        "spearman_r": -0.18539142768091937,
+        "spearman_p": 0.054742752444589836,
+        "n_samples": 108
+      }
+    },
+    "Acute Coronary Syndrome": {
+      "mindfulness_therapies_started": {
+        "pearson_r": 0.1680343433278188,
+        "pearson_p": 0.3065321121183539,
+        "spearman_r": 0.3448513153890458,
+        "spearman_p": 0.03155794456522339,
+        "n_samples": 39
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": 0.14612257719952426,
+        "pearson_p": 0.37474351547164425,
+        "spearman_r": 0.356718923146782,
+        "spearman_p": 0.025804910311325837,
+        "n_samples": 39
+      },
+      "therapy_completion_rate": {
+        "pearson_r": 0.27577419802790415,
+        "pearson_p": 0.0892616360294366,
+        "spearman_r": 0.3736382625916687,
+        "spearman_p": 0.01912823151154137,
+        "n_samples": 39
+      },
+      "therapy_engagement": {
+        "pearson_r": 0.1593784849751182,
+        "pearson_p": 0.332470975497449,
+        "spearman_r": 0.2871327439707375,
+        "spearman_p": 0.07633893964535576,
+        "n_samples": 39
+      }
+    },
+    "Renal Insufficiency": {
+      "mindfulness_therapies_started": {
+        "pearson_r": 0.1366298719383584,
+        "pearson_p": 0.7066393089269333,
+        "spearman_r": 0.3782432194807688,
+        "spearman_p": 0.2811530742302276,
+        "n_samples": 10
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": 0.16337994690913474,
+        "pearson_p": 0.6519944586310541,
+        "spearman_r": 0.41202303186928346,
+        "spearman_p": 0.23675199828994173,
+        "n_samples": 10
+      },
+      "therapy_completion_rate": {
+        "pearson_r": 0.5765503828096382,
+        "pearson_p": 0.08103576074445423,
+        "spearman_r": 0.5376680475263821,
+        "spearman_p": 0.10894435249694424,
+        "n_samples": 10
+      },
+      "therapy_engagement": {
+        "pearson_r": 0.6562684232250436,
+        "pearson_p": 0.03931309280396287,
+        "spearman_r": 0.6603573764586061,
+        "spearman_p": 0.03768585138902399,
+        "n_samples": 10
+      }
+    },
+    "Lower Limb Amputation": {
+      "mindfulness_therapies_started": {
+        "pearson_r": -0.08670505674295874,
+        "pearson_p": 0.811752142881889,
+        "spearman_r": 0.12074824237565455,
+        "spearman_p": 0.7396807972878795,
+        "n_samples": 10
+      },
+      "mindfulness_therapies_completed": {
+        "pearson_r": -0.09821268715326043,
+        "pearson_p": 0.7872200726221452,
+        "spearman_r": 0.07805548790364746,
+        "spearman_p": 0.8302901223135194,
+        "n_samples": 10
+      },
+      "therapy_completion_rate": {
+        "pearson_r": 0.31887758389481496,
+        "pearson_p": 0.3691611070210912,
+        "spearman_r": 0.13659710383138304,
+        "spearman_p": 0.7067070502399007,
+        "n_samples": 10
+      },
+      "therapy_engagement": {
+        "pearson_r": 0.3334827389865013,
+        "pearson_p": 0.3463640061220863,
+        "spearman_r": 0.11797157083235557,
+        "spearman_p": 0.7454988328907024,
+        "n_samples": 10
+      }
+    }
+  },
+  "statistical_tests": {}
+}

@@ -1,0 +1,17 @@
+\begin{table}[h]
+\centering
+\caption{24-Week Phase-Level Performance Summary (Actual Experimental Results)}
+\label{tab:phase_summary_24w}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Phase} & \textbf{\# Models} & \textbf{Mean R$^2$} & \textbf{Best R$^2$} & \textbf{Mean MAE} & \textbf{Best MAE} & \textbf{Best Model} \\ \midrule
+Phase 1: Linear & 9 & -1.0280 $\pm$ 2.8577 & 0.0938 & 5.7851 & 4.6758 & \texttt{lasso\_regression} \\
+Phase 2: Classical ML & 10 & 0.0664 $\pm$ 0.0556 & 0.1388 & 4.6266 & 4.4867 & \texttt{random\_forest} \\
+Phase 3: Ensembles & 5 & 0.1332 $\pm$ 0.0413 & 0.2001 & 4.6520 & 4.3648 & \texttt{catboost} \\
+Phase 4: Deep Learning & 7 & -0.0115 $\pm$ 0.2075 & 0.1677 & 4.9049 & 4.6223 & \texttt{mlp\_large} \\
+Phase 5: Time-Series & 12 & -0.1995 $\pm$ 0.4647 & 0.1549 & 5.3930 & 4.7989 & \texttt{rf\_trajectory} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

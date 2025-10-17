@@ -1,0 +1,6 @@
+Phase,N_Models,Param_Category,Training_Category,GPU_Required_Count,GPU_Percentage,Efficiency_Score,12W_R2,12W_MAE,24W_R2,24W_MAE
+Phase 1: Linear Models,6,L,F,0,0.0,0.292,-1.2372,6.03,-1.028,5.79
+Phase 2: Classical ML,7,M,M,0,0.0,0.446,0.1029,4.9,0.0664,4.63
+Phase 3: Ensemble Methods,5,H,S,0,0.0,0.75,0.0265,5.15,0.1332,4.65
+Phase 4: Deep Learning,6,V,V,6,100.0,0.917,-0.0215,5.13,-0.0115,4.9
+Phase 5: Time-Series Models,7,V,V,5,71.4,0.893,-0.1801,5.66,-0.1995,5.39
