@@ -1,25 +1,45 @@
-# MINDER : Machine Learning Framework for Depression Score Analysis in Mindfulness Interventions across Medically Complex Patients
+<div align="center">
 
-## Team CSOSEN's Comprehensive Analysis for IEEE EMBS BHI 2025 Track-1
+<table border="0">
+<tr>
+<td width="200" align="center">
+<img src="imgs/minder_logo.png" alt="MINDER Logo" width="160"/>
+</td>
+<td>
+<h1>
+<strong>M</strong>achine Learn<strong>I</strong>ng Framework for Depressio<strong>N</strong> Score Analysis in Min<strong>D</strong>fulness Int<strong>ER</strong>ventions across Medically Complex Patients
+</h1>
+</td>
+</tr>
+</table>
+
+</div>
 
 <div align="center">
 
 **Nikhileswara Rao Sulake¹† · Sai Manikanta Eswar Machara¹ · Divya Katam²**
 
-¹Department of Computer Science and Engineering, RGUKT, Nuzvid, India  
-²Department of Electronics and Communication Engineering, RGUKT, Nuzvid, India
-
-†Team Leader · 📧 nikhil01446@gmail.com
-
----
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![IEEE EMBS BHI 2025](https://img.shields.io/badge/IEEE%20EMBS%20BHI-2025-green.svg)](https://bhi.embs.org/2025/)
-
-**[Paper (LaTeX)](Reports/final-submission.tex) · [Results](#results-summary) · [Code](SRC_Track1/) · [Figures](Reports/figures/)**
-
+<sub>¹ Department of Computer Science and Engineering, RGUKT, Nuzvid, India</sub>  <br>
+<sub>² Department of Electronics and Communication Engineering, RGUKT, Nuzvid, India</sub><br>
+<sub>† Team Leader · 📧 nikhil01446@gmail.com · 🌐 [nikhil-rao20.github.io](nikhil-rao20.github.io) </sub>
 </div>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python"></a>
+  <a href="https://bhi.embs.org/2025/"><img src="https://img.shields.io/badge/IEEE-BHI%202025-red.svg" alt="Conference"></a>
+  <a href="Reports/final-submission.tex"><img src="https://img.shields.io/badge/Paper-LaTeX-green.svg" alt="Paper"></a>
+</p>
+
+**IEEE EMBS BHI 2025 · Track-1 Data Competition · Team CSOSEN**
+
+<p align="center">
+  <a href="#-abstract">Abstract</a> •
+  <a href="#-key-findings">Key Findings</a> •
+  <a href="#-results-summary">Results</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-citation">Citation</a>
+</p>
 
 ---
 
@@ -243,91 +263,115 @@ We systematically evaluated **40 models** across five methodological phases to i
 
 ## 📊 Results Summary
 
-### Phase-Level Performance (Mean ± SD across models)
+### Comprehensive 40-Model Performance Comparison
+
+The following table presents all 40 models evaluated across both 12-week and 24-week prediction timepoints. Models are organized by phase (increasing complexity from Phase 1 to Phase 5), with top performers highlighted for each timepoint.
 
 <div align="center">
 
-![Phase Radar Plots](Reports/figures/phase_radar_12w_actual.png)
-![Phase Radar 24W](Reports/figures/phase_radar_24w_actual.png)
+#### Table 1: Complete Model Performance Metrics (All 40 Models)
 
-**Figure 1:** Phase-level performance comparison. Left: 12-week predictions. Right: 24-week predictions. Phase 2 (Classical ML) excels at short-term, while Phase 3 (Ensembles) dominates long-term forecasting.
+| Model | 12-Week R² | 12-Week MAE | 24-Week R² | 24-Week MAE | Model | 12-Week R² | 12-Week MAE | 24-Week R² | 24-Week MAE |
+|-------|------------|-------------|------------|-------------|-------|------------|-------------|------------|-------------|
+| **PHASE 1: Linear Baselines** | | | | | **PHASE 3: Advanced Ensembles** | | | | |
+| Linear Regression | -0.03 ± 0.24 | 5.18 ± 0.34 | -0.02 ± 0.25 | 5.08 ± 0.65 | Voting Regressor | -0.17 ± 0.35 | 5.39 ± 0.55 | 0.09 ± 0.30 | 4.70 ± 0.42 |
+| Ridge Regression | 0.15 ± 0.17 | 4.79 ± 0.38 | 0.09 ± 0.21 | 4.73 ± 0.38 | Stacking Regressor | 0.07 ± 0.12 | 5.18 ± 0.72 | 0.11 ± 0.19 | 4.80 ± 0.48 |
+| **Lasso Regression** ⭐ | **0.18 ± 0.11** | **4.71 ± 0.53** | 0.09 ± 0.18 | 4.68 ± 0.43 | Advanced Stacking | 0.04 ± 0.16 | 5.26 ± 0.66 | 0.13 ± 0.18 | 4.77 ± 0.46 |
+| **Elastic Net** ⭐ | **0.16 ± 0.16** | **4.77 ± 0.43** | 0.09 ± 0.19 | 4.68 ± 0.41 | XGBoost | 0.09 ± 0.14 | 5.00 ± 0.63 | 0.13 ± 0.24 | 4.63 ± 0.55 |
+| Bayesian Ridge | 0.14 ± 0.17 | 4.79 ± 0.36 | 0.08 ± 0.21 | 4.74 ± 0.39 | **CatBoost** 🥇 | 0.09 ± 0.16 | 4.91 ± 0.51 | **0.20 ± 0.13** | **4.36 ± 0.58** |
+| Huber Regressor | 0.11 ± 0.16 | 4.79 ± 0.49 | 0.02 ± 0.20 | 4.68 ± 0.21 | | | | | |
+| RANSAC Regressor | -0.37 ± 0.39 | 5.98 ± 1.05 | -0.96 ± 0.76 | 6.80 ± 1.49 | **PHASE 4: Deep Learning** | | | | |
+| Decision Tree | -0.07 ± 0.14 | 5.19 ± 0.64 | -0.06 ± 0.40 | 4.81 ± 0.63 | MLP (Small) | 0.05 ± 0.09 | 5.24 ± 0.65 | 0.06 ± 0.14 | 4.88 ± 0.08 |
+| | | | | | MLP (Medium) | 0.13 ± 0.13 | 4.96 ± 0.31 | 0.15 ± 0.15 | 4.73 ± 0.17 |
+| **PHASE 2: Classical ML** | | | | | **MLP (Large)** ⭐ | -0.04 ± 0.18 | 5.30 ± 0.98 | **0.16 ± 0.13** | **4.64 ± 0.09** |
+| Random Forest | 0.09 ± 0.19 | 4.82 ± 0.45 | 0.14 ± 0.25 | 4.52 ± 0.44 | TF MLP (Simple) | -0.12 ± 0.16 | 5.29 ± 0.85 | 0.04 ± 0.06 | 4.66 ± 0.12 |
+| Extra Trees | 0.05 ± 0.25 | 4.93 ± 0.36 | -0.01 ± 0.39 | 4.78 ± 0.38 | TF MLP (Deep) | -0.35 ± 0.70 | 5.53 ± 1.27 | -0.31 ± 0.32 | 5.49 ± 0.93 |
+| AdaBoost | 0.09 ± 0.15 | 4.83 ± 0.53 | 0.11 ± 0.23 | 4.65 ± 0.53 | TF ResNet | 0.05 ± 0.11 | 4.83 ± 0.66 | -0.31 ± 0.27 | 5.31 ± 0.72 |
+| Gradient Boosting | 0.06 ± 0.19 | 5.07 ± 0.48 | 0.03 ± 0.26 | 4.79 ± 0.54 | TF Attention | 0.15 ± 0.07 | 4.78 ± 0.34 | 0.12 ± 0.07 | 4.62 ± 0.08 |
+| SVR (Linear) | 0.14 ± 0.12 | 4.67 ± 0.58 | 0.03 ± 0.15 | 4.56 ± 0.26 | | | | | |
+| SVR (RBF) | 0.15 ± 0.08 | 4.73 ± 0.81 | 0.11 ± 0.18 | 4.49 ± 0.34 | **PHASE 5: Time-Series Models** | | | | |
+| SVR (Poly) | 0.04 ± 0.22 | 5.24 ± 1.06 | -0.01 ± 0.10 | 4.80 ± 0.69 | ARIMA | -0.21 ± 0.21 | 5.71 ± 0.97 | -0.23 ± 0.25 | 5.14 ± 1.27 |
+| NU SVR | 0.14 ± 0.07 | 4.74 ± 0.91 | 0.05 ± 0.10 | 4.51 ± 0.56 | Exponential Smoothing | -0.20 ± 0.06 | 5.87 ± 0.83 | -0.29 ± 0.38 | 5.31 ± 1.53 |
+| KNN Regressor | 0.13 ± 0.14 | 5.01 ± 0.57 | 0.12 ± 0.19 | 4.55 ± 0.56 | Moving Average | -0.50 ± 0.35 | 6.38 ± 1.08 | -0.40 ± 0.23 | 5.80 ± 1.39 |
+| KNN Uniform | 0.15 ± 0.14 | 4.95 ± 0.64 | 0.01 ± 0.22 | 4.62 ± 0.67 | LSTM (Simple) | 0.05 ± 0.06 | 5.33 ± 0.48 | 0.01 ± 0.03 | 5.08 ± 0.34 |
+| | | | | | LSTM (Bi-dir) | 0.13 ± 0.07 | 5.13 ± 0.57 | -0.01 ± 0.03 | 5.19 ± 0.34 |
+| | | | | | LSTM (Stacked) | 0.13 ± 0.12 | 5.03 ± 0.61 | -0.01 ± 0.01 | 5.11 ± 0.37 |
+| | | | | | GRU | 0.08 ± 0.05 | 5.22 ± 0.47 | 0.01 ± 0.04 | 5.18 ± 0.37 |
+| | | | | | **Transformer** 🥇 | **0.24 ± 0.09** | **4.53 ± 0.56** | 0.08 ± 0.14 | 4.97 ± 0.61 |
+| | | | | | **RF Trajectory** ⭐ | 0.01 ± 0.20 | 5.12 ± 0.02 | **0.16 ± 0.12** | **4.80 ± 0.28** |
+| | | | | | Ridge Trajectory | 0.07 ± 0.15 | 4.99 ± 0.23 | 0.10 ± 0.15 | 4.95 ± 0.38 |
+
+**Legend:** 🥇 = Best Overall | ⭐ = Top 3 for respective timepoint
 
 </div>
 
-### Model-Level Performance (All 40+ Models)
+**Key Observations:**
+- **12-Week Champion:** Transformer (Phase 5) achieves R² = 0.247, leveraging attention mechanisms for short-term prediction
+- **24-Week Champion:** CatBoost (Phase 3) achieves R² = 0.200, with gradient boosting excelling for longer horizons
+- **Consistent Performers:** Lasso/ElasticNet (Phase 1) and MLP Large (Phase 4) show balanced performance
+- **Phase Trends:** Linear models provide strong baselines; ensembles dominate 24W; time-series models show high variance
+
+---
+
+### BDI-II Trajectory Distributions by Condition
 
 <div align="center">
 
-![Detailed 12W](Reports/figures/phase_models_radar_12w_detailed.png)
-![Detailed 24W](Reports/figures/phase_models_radar_24w_detailed.png)
+![BDI Trajectories 1](imgs/temp1.png)
+![BDI Trajectories 2](imgs/temp2.png)
 
-**Figure 2:** Individual model performance within each phase. Reveals within-phase heterogeneity and robust algorithm choices.
+**Figure 1:** Longitudinal depression trajectories across different medical conditions, illustrating heterogeneous treatment responses and baseline severity patterns.
 
 </div>
 
-### Statistical Validation: Bootstrap Confidence Intervals
+### Phase-Level Performance Comparison
 
 <div align="center">
 
-![Bootstrap CI](Reports/figures/bootstrap_confidence_intervals.png)
+<img src="imgs/phase_radar_12w_actual.png" alt="Phase Radar 12W" width="45%"/> <img src="imgs/phase_radar_24w_actual.png" alt="Phase Radar 24W" width="45%"/>
 
-**Figure 3:** 10,000-iteration bootstrap 95% confidence intervals for phase-level R² and MAE. Phase 2 shows tight CI at 12W (reliable), Phase 3 achieves best 24W performance with narrow CI.
+**Figure 2:** Phase-level performance radar plots. Left: 12-week predictions. Right: 24-week predictions. Phase 2 (Classical ML) excels at short-term, while Phase 3 (Ensembles) dominates long-term forecasting.
 
 </div>
 
-**Key Statistical Tests (CSV Export):**
-- [`phase_statistical_comparisons.csv`](Reports/figures/phase_statistical_comparisons.csv) — All pairwise Mann-Whitney U tests with p-values and Cohen's d
-
-### Computational Efficiency Analysis
+### Detailed Model-Level Performance (All 40 Models)
 
 <div align="center">
 
-![Efficiency](Reports/figures/computational_efficiency_analysis.png)
+![Detailed 12W](imgs/phase_models_radar_12w_detailed.png)
+![Detailed 24W](imgs/phase_models_radar_24w_detailed.png)
 
-**Figure 4:** Multi-panel efficiency analysis. Top: Parameter complexity, training speed, GPU requirements. Middle: Efficiency vs performance scatter (12W & 24W). Bottom: Complexity heatmap. **Phase 2-3 offer optimal trade-offs.**
+**Figure 3:** Individual model performance within each phase. Reveals within-phase heterogeneity and robust algorithmic choices.
 
 </div>
 
-**Detailed Profiles:**
-- [`computational_efficiency_summary.csv`](Reports/figures/computational_efficiency_summary.csv)
-- [`model_computational_profiles.csv`](Reports/figures/model_computational_profiles.csv)
-
-### Disease-Specific Analysis
+### Hyperparameter Optimization Analysis
 
 <div align="center">
 
-![Disease Overview](Reports/figures/condition_analysis_overview.png)
+![Hyperparameter Tuning](imgs/hyper-parameter-comp.png)
 
-**Figure 5:** Comprehensive disease-specific analysis. Includes trajectory plots, engagement patterns, correlation matrices, and high-vs-low engagement comparisons by condition.
+**Figure 4:** Hyperparameter tuning heatmaps for top-performing models: Transformer (left, 12-week task) and CatBoost (right, 24-week task). Color intensity represents R² score magnitude. White stars mark optimal configurations discovered through Bayesian optimization.
 
 </div>
 
+### SHAP Feature Importance Analysis
+
 <div align="center">
 
-![Treatment Response](Reports/figures/treatment_response_comprehensive_analysis_static.png)
+<img src="imgs/feature_importance.png" alt="SHAP Feature Importance" width="60%"/>
 
-**Figure 6:** Treatment response patterns across medical conditions. Visualizes engagement rates, dose-response relationships, and outcome distributions.
+**Figure 5:** Global SHAP feature importance rankings. Baseline BDI-II dominates (~40%), followed by age (~15%) and therapy engagement (~12%).
 
 </div>
 
-### Phase Comparison Heatmaps & Bar Charts
+### Disease-Specific Performance Analysis
 
 <div align="center">
 
-![Heatmap](Reports/figures/phase_comparison_heatmap_actual.png)
-![Bar Chart](Reports/figures/phase_comparison_barchart_actual.png)
+![Disease Analysis](imgs/disease_specific_analysis.png)
 
-**Figure 7:** Phase-level performance heatmap (left) and bar chart (right) for direct visual comparison across R², MAE, and RMSE metrics.
-
-</div>
-
-### SHAP Feature Importance
-
-<div align="center">
-
-![SHAP](Reports/figures/shap_feature_importance_static.png)
-
-**Figure 8:** Global SHAP feature importance rankings. Baseline BDI-II dominates (~40%), followed by age (~15%) and therapy engagement (~12%).
+**Figure 6:** Comprehensive disease-specific analysis showing condition-dependent treatment effects, engagement patterns, and outcome distributions across cancer, ACS, renal, and amputation patient subgroups.
 
 </div>
 
@@ -335,18 +379,18 @@ We systematically evaluated **40 models** across five methodological phases to i
 
 ## 🎨 Visualizations
 
-All figures are publication-ready (300 DPI) and available in [`Reports/figures/`](Reports/figures/):
+All figures are publication-ready (300 DPI) and available in [`imgs/`](imgs/):
 
 | Category | Files |
 |----------|-------|
-| **Phase Performance** | `phase_radar_12w_actual.png`, `phase_radar_24w_actual.png`, `phase_models_radar_12w_detailed.png`, `phase_models_radar_24w_detailed.png` |
-| **Statistical Tests** | `bootstrap_confidence_intervals.png`, `phase_statistical_comparisons.csv` |
-| **Efficiency** | `computational_efficiency_analysis.png`, `computational_efficiency_summary.csv` |
-| **Disease-Specific** | `condition_analysis_overview.png`, `treatment_response_comprehensive_analysis_static.png` |
-| **Comparisons** | `phase_comparison_heatmap_actual.png`, `phase_comparison_barchart_actual.png` |
-| **Interpretability** | `shap_feature_importance_static.png`, `medical_conditions_shap_spotlight.png` |
+| **BDI Trajectories** | `temp1.png`, `temp2.png` |
+| **Hyperparameter Optimization** | `hyper-parameter-comp.png` |
+| **Phase Performance Radars** | `phase_radar_12w_actual.png`, `phase_radar_24w_actual.png` |
+| **Detailed Model Radars** | `phase_models_radar_12w_detailed.png`, `phase_models_radar_24w_detailed.png` |
+| **Feature Importance** | `feature_importance.png` |
+| **Disease-Specific Analysis** | `disease_specific_analysis.png` |
 
-**Interactive HTML dashboards** are also available for exploration.
+**Additional resources** including statistical test results and computational profiles are available in [`Reports/figures/`](Reports/figures/).
 
 ---
 
@@ -483,46 +527,266 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-### Option 1: Explore Pre-Computed Results (Recommended)
+### Quick Start Guide
+
+#### Option 1: Explore Pre-Computed Results (⭐ Recommended)
+
+All experimental results are already computed and documented. **No need to re-run the entire pipeline** unless you want to modify the experiments.
 
 ```bash
-# View compiled results (JSON)
-cat Results_12W/Conference_Submission/all_results_compiled.json | jq .
+# 1. Clone the repository
+git clone https://github.com/Nikhil-Rao20/IEEE_EMBS_BHI_25_CSOSEN.git
+cd IEEE_EMBS_BHI_25_CSOSEN
 
-# Browse figures
-open Reports/figures/  # macOS
-explorer Reports\figures\  # Windows
-xdg-open Reports/figures/  # Linux
+# 2. Install dependencies
+pip install -r requirements.txt
 
-# Read documentation
-open Reports/FINAL_INTEGRATION_COMPLETE.md
+# 3. Launch Jupyter to explore results
+jupyter notebook
+
+# 4. Open and run Testing.ipynb to see model predictions
+# This notebook loads pre-trained models and makes predictions on test data
 ```
 
-### Option 2: Interactive Jupyter Analysis
+**What you can explore:**
+- ✅ **Pre-trained Models:** All 40 models with optimized hyperparameters in `All_Trained_Models/`
+- ✅ **Complete Results:** JSON files with 5-fold CV metrics in `Results_12W/` and `Results_24W/`
+- ✅ **Publication Figures:** All visualizations used in the paper in `imgs/`
+- ✅ **Predictions:** Run `Testing.ipynb` to generate predictions on test data
+- ✅ **Model Registry:** `All_Trained_Models/all_models_summary.json` contains metadata for all models
 
 ```bash
+# View compiled results (requires jq for pretty JSON)
+cat Results_12W/Conference_Submission/all_results_compiled.json | jq .
+
+# Or just view the model summary
+cat All_Trained_Models/all_models_summary.json
+```
+
+---
+
+#### Option 2: Run Inference with Pre-Trained Models
+
+```bash
+# Open the Testing notebook
+jupyter notebook Testing.ipynb
+```
+
+**The Testing.ipynb notebook provides:**
+1. Load pre-trained models from `All_Trained_Models/`
+2. Load test data from `Track1_Data/test.csv`
+3. Generate predictions for 12-week and 24-week BDI-II scores
+4. Export predictions to CSV
+5. Visualize model performance
+
+**Example code snippet:**
+```python
+import pickle
+import pandas as pd
+
+# Load best 12-week model (Transformer)
+with open('All_Trained_Models/Rank_01_phase5_transformer/model.pkl', 'rb') as f:
+    model_12w = pickle.load(f)
+
+# Load test data
+test_data = pd.read_csv('Track1_Data/test.csv')
+
+# Make predictions
+predictions_12w = model_12w.predict(test_data)
+```
+
+---
+
+#### Option 3: Interactive Analysis (Explore Code and Methods)
+
+```bash
+# Launch Jupyter
 jupyter notebook sample.ipynb
 ```
 
-This notebook includes:
-- ✅ Data loading & EDA
-- ✅ Feature engineering pipeline
-- ✅ All 5 modeling phases
-- ✅ Statistical validation (bootstrap, Mann-Whitney U)
-- ✅ SHAP interpretability
-- ✅ Disease-stratified analysis
-- ✅ Computational efficiency profiling
+**The sample.ipynb notebook includes:**
+- ✅ **Data Loading & EDA:** Exploratory analysis of patient characteristics
+- ✅ **Feature Engineering:** 26-feature pipeline construction
+- ✅ **Model Training Examples:** Code for each of the 5 phases
+- ✅ **Cross-Validation:** 5-fold stratified CV implementation
+- ✅ **SHAP Analysis:** Feature importance interpretation
+- ✅ **Disease Stratification:** Condition-specific model training
 
-### Option 3: Run Specific Phases
+**You can modify hyperparameters and re-train individual models without running the full pipeline.**
 
+---
+
+#### Option 4: Full Pipeline Replication (⚠️ Compute-Intensive)
+
+**Warning:** Running all 40 models with hyperparameter tuning takes **~36 hours on CPU** (Intel i7-12650H, 16GB RAM). GPU recommended for Phases 4-5.
+
+```bash
+# 1. Clone and install
+git clone https://github.com/Nikhil-Rao20/IEEE_EMBS_BHI_25_CSOSEN.git
+cd IEEE_EMBS_BHI_25_CSOSEN
+pip install -r requirements.txt
+
+# 2. Verify data is present
+ls Track1_Data/
+# Should show: train.csv, test.csv, data_dictionary.pdf
+
+# 3. Run notebooks sequentially in Notebooks/ folder
+jupyter notebook Notebooks/
+
+# Execute in this order:
+# 01_EDA.ipynb → 02_Feature_Engineering.ipynb 
+# → 03_Phase1_Linear_Models.ipynb → 04_Phase2_Classical_ML.ipynb
+# → 05_Phase3_Ensembles.ipynb → 06_Phase4_Deep_Learning.ipynb
+# → 07_Phase5_Time_Series.ipynb → 08_Statistical_Validation.ipynb
+# → 09_Disease_Stratified.ipynb → 10_Interpretability_SHAP.ipynb
+```
+
+**Expected Outputs After Full Run:**
+```
+Results_12W/Conference_Submission/
+├── all_results_compiled.json       # All model metrics (5-fold CV)
+├── phase_performance.csv           # Phase-level aggregates
+└── best_models_summary.json        # Top 3 performers
+
+Results_24W/Conference_Submission/
+├── all_results_compiled.json
+├── phase_performance.csv
+└── best_models_summary.json
+
+All_Trained_Models/
+├── all_models_summary.json         # Model registry
+├── Rank_01_phase5_transformer/     # Best 12W model
+│   ├── model.pkl
+│   ├── hyperparameters.json
+│   └── cv_results.json
+├── Rank_01_phase3_catboost/        # Best 24W model
+│   └── ...
+└── [38 more model directories]
+
+imgs/
+├── phase_radar_12w_actual.png
+├── phase_radar_24w_actual.png
+└── [6+ more figures]
+```
+
+---
+
+#### Option 5: Run Specific Phases Only
+
+If you want to test a particular modeling approach without running everything:
+
+**Phase 1 (Linear Models) - Fastest, ~30 min:**
+```bash
+jupyter notebook Notebooks/03_Phase1_Linear_Models.ipynb
+```
+
+**Phase 3 (Ensembles) - Best 24W performance, ~2 hours:**
+```bash
+jupyter notebook Notebooks/05_Phase3_Ensembles.ipynb
+```
+
+**Phase 5 (Time-Series) - Best 12W performance, ~8 hours with GPU:**
+```bash
+jupyter notebook Notebooks/07_Phase5_Time_Series.ipynb
+```
+
+**Python Script Example (Phase 3 - CatBoost):**
 ```python
-# Example: Run Phase 3 (Ensembles) only
 from SRC_Track1.models.phase3_ensembles import train_catboost
 from SRC_Track1.evaluation import cross_validate
+from SRC_Track1.data_loader import load_data
+from SRC_Track1.preprocessing import engineer_features
 
+# Load and prepare data
+train_df = load_data('Track1_Data/train.csv')
+X_train, y_train = engineer_features(train_df, target='BDI_24W')
+
+# Train CatBoost with default hyperparameters
 model = train_catboost(X_train, y_train)
+
+# Evaluate with 5-fold CV
 results = cross_validate(model, X_train, y_train, cv=5)
-print(f"CatBoost R²: {results['test_r2_mean']:.3f} ± {results['test_r2_std']:.3f}")
+print(f"CatBoost 24W Performance:")
+print(f"  R² = {results['test_r2_mean']:.3f} ± {results['test_r2_std']:.3f}")
+print(f"  MAE = {results['test_mae_mean']:.3f} ± {results['test_mae_std']:.3f}")
+```
+
+---
+
+### Hardware Requirements by Phase
+
+| Phase | Min RAM | Recommended | GPU Required? | Est. Time (CPU) | Est. Time (GPU) |
+|-------|---------|-------------|---------------|-----------------|-----------------|
+| **Phase 1** (Linear) | 8GB | 16GB | ❌ No | 30 min | N/A |
+| **Phase 2** (Classical ML) | 16GB | 16GB | ❌ No | 2 hours | N/A |
+| **Phase 3** (Ensembles) | 16GB | 32GB | ❌ No | 2 hours | N/A |
+| **Phase 4** (Deep Learning) | 16GB | 32GB | ⚠️ Recommended | 8 hours | 2 hours |
+| **Phase 5** (Time-Series) | 16GB | 32GB | ⚠️ Recommended | 16 hours | 4 hours |
+| **Full Pipeline** | 16GB | 32GB | ⚠️ Recommended | **36 hours** | **10 hours** |
+
+**GPU Specs for Deep Learning (Phases 4-5):**
+- NVIDIA RTX 3060 (12GB VRAM) or better
+- CUDA 11.8+ and cuDNN 8.6+
+- TensorFlow 2.12+ with GPU support
+
+**Our Hardware:**
+- Acer Nitro 5 Laptop
+- Intel i7-12650H (16 CPUs @ ~2.7GHz)
+- 16GB RAM
+- **No GPU used** (all results generated on CPU)
+
+---
+
+### Troubleshooting
+
+**Issue 1: Out of Memory during Phase 4/5**
+```bash
+# Reduce batch size in deep learning models
+# Edit Notebooks/06_Phase4_Deep_Learning.ipynb
+# Change: BATCH_SIZE = 32 → BATCH_SIZE = 8
+```
+
+**Issue 2: Missing Dependencies**
+```bash
+# Reinstall with all extras
+pip install -r requirements.txt --upgrade
+```
+
+**Issue 3: Bayesian Optimization Timeout**
+```bash
+# Reduce optimization iterations
+# Edit SRC_Track1/models/hyperparameter_tuning.py
+# Change: N_ITERATIONS = 100 → N_ITERATIONS = 20
+```
+
+**Issue 4: GPU Not Detected (TensorFlow/PyTorch)**
+```bash
+# Verify GPU setup
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+python -c "import torch; print(torch.cuda.is_available())"
+
+# If not detected, install GPU versions:
+pip install tensorflow[and-cuda]  # TensorFlow with GPU
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # PyTorch with CUDA 11.8
+```
+
+---
+
+### File Structure Guide
+
+```
+Key Files to Know:
+├── Testing.ipynb                    ← Load pre-trained models and predict
+├── sample.ipynb                     ← Interactive analysis (all phases)
+├── Track1_Data/train.csv            ← Training data (210 patients)
+├── Track1_Data/test.csv             ← Test data for predictions
+├── All_Trained_Models/              ← 40 pre-trained models
+│   └── all_models_summary.json      ← Model metadata
+├── Results_12W/Conference_Submission/
+│   └── all_results_compiled.json    ← 12-week CV results
+├── Results_24W/Conference_Submission/
+│   └── all_results_compiled.json    ← 24-week CV results
+└── imgs/                            ← Publication figures
 ```
 
 ---
