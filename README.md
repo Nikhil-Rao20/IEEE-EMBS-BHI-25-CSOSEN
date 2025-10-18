@@ -3,7 +3,7 @@
 <table border="0">
 <tr>
 <td width="200" align="center">
-<img src="imgs/minder_logo.png" alt="MINDER Logo" width="160"/>
+<img src="imgs/minder.png" alt="MINDER Logo" width="160"/>
 </td>
 <td>
 <h1>
