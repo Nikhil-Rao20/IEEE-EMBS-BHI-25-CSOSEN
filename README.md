@@ -6,9 +6,9 @@
 <img src="imgs/minder.png" alt="MINDER Logo" width="160"/>
 </td>
 <td>
-<h1>
-<strong>M</strong>achine Learn<strong>I</strong>ng Framework for Depressio<strong>N</strong> Score Analysis in Min<strong>D</strong>fulness Int<strong>ER</strong>ventions across Medically Complex Patients
-</h1>
+<h2>
+Machine Learning Framework for Depression Score Analysis in Mindfulness Interventions across Medically Complex Patients
+</h2>
 </td>
 </tr>
 </table>
@@ -34,46 +34,35 @@
 **IEEE EMBS BHI 2025 · Track-1 Data Competition · Team CSOSEN**
 
 <p align="center">
-  <a href="#-abstract">Abstract</a> •
-  <a href="#-key-findings">Key Findings</a> •
-  <a href="#-results-summary">Results</a> •
-  <a href="#-usage">Usage</a> •
-  <a href="#-citation">Citation</a>
+  <a href="#">Abstract</a> •
+  <a href="#">Key Findings</a> •
+  <a href="#">Repository Structure</a> •
+  <a href="#">Methodology Overview</a> •
+  <a href="#">Results</a> •
+  <a href="#">Visualizations</a> •
+  <a href="#">Reproducibility</a> •
+  <a href="#">Installation</a> •
+  <a href="#">Usage</a> •
 </p>
 
----
-
-## 📋 Table of Contents
-
-- [Abstract](#abstract)
-- [Key Findings](#key-findings)
-- [Repository Structure](#repository-structure)
-- [Methodology Overview](#methodology-overview)
-- [Results Summary](#results-summary)
-- [Visualizations](#visualizations)
-- [Reproducibility](#reproducibility)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Citation](#citation)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
 
 ---
 
 ## 📖 Abstract
-
+<p id='abstract'>
 Depression prediction in medically complex populations remains challenging due to heterogeneous treatment responses. We present a comprehensive machine learning framework evaluating **40 models across five methodological phases** to predict Beck Depression Inventory-II (BDI-II) scores at 12- and 24-week follow-ups post-mindfulness intervention. Using data from **210 patients** with diverse medical comorbidities, Transformer and CatBoost models achieved optimal performance (R² = 0.247 and 0.200, respectively). 
 
 Disease-stratified analysis reveals profound condition-dependent effects: cancer patients show elevated depression (+2.92 points) yet strongest therapy benefits (4.19-point improvement with high engagement), while renal patients exhibit unexpected protective patterns (–4.23 points). SHAP analysis identifies baseline severity (≈40%), age (≈15%), and therapy engagement (≈12%) as primary predictors. Disease-specific models achieve exceptional accuracy (R² = 0.81–0.93), establishing condition-stratified frameworks as essential for clinical deployment in precision psychiatry.
 
 In addition, we implemented rigorous statistical validation using 10,000-iteration bootstrap confidence intervals and Mann-Whitney U tests with effect sizes to address small sample concerns. We performed detailed phase-level and model-level visualizations (radar plots, heatmaps), quantified computational efficiency and hardware requirements, and provided translational guidance for clinical deployment.
-
+</p>
 **📊 Full results, figures, and reproducibility materials are available in this repository.**
 
 ---
 
 ## 🎯 Key Findings
-
+<p id='key'>
+</p>
 ### 1. **Timepoint-Specific Model Performance**
 
 | Timepoint | Best Model | R² Score | MAE | RMSE | Clinical Utility |
