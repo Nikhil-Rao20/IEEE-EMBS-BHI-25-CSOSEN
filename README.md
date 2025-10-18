@@ -21,7 +21,7 @@ Machine Learning Framework for Depression Score Analysis in Mindfulness Interven
 
 <sub>¹ Department of Computer Science and Engineering, RGUKT, Nuzvid, India</sub>  <br>
 <sub>² Department of Electronics and Communication Engineering, RGUKT, Nuzvid, India</sub><br>
-<sub>† Team Leader · 📧 nikhil01446@gmail.com · 🌐 [nikhil-rao20.github.io](nikhil-rao20.github.io) </sub>
+<sub>† Team Leader · 📧 nikhil01446@gmail.com · 🌐 [nikhil-rao20.github.io](https://nikhil-rao20.github.io/) </sub>
 </div>
 
 <p align="center">
