@@ -36,11 +36,11 @@ Machine Learning Framework for Depression Score Analysis in Mindfulness Interven
 <p align="center">
   <a href="#abstract">Abstract</a> •
   <a href="#key">Key Findings</a> •
-  <a href="#">Repository Structure</a> •
-  <a href="#">Methodology Overview</a> •
-  <a href="#">Results</a> •
-  <a href="#">Reproducibility</a> •
-  <a href="#">Usage</a> •
+  <a href="#repo">Repository Structure</a> •
+  <a href="#meth">Methodology Overview</a> •
+  <a href="#results">Results</a> •
+  <a href="#reproduce">Reproducibility</a> •
+  <a href="#use">Usage</a> •
 </p>
 
 
@@ -59,8 +59,8 @@ In addition, we implemented rigorous statistical validation using 10,000-iterati
 ---
 
 ## 🎯 Key Findings
-<p id='key'>
-</p>
+<p id='key'></p>
+
 ### 1. **Timepoint-Specific Model Performance**
 
 | Timepoint | Best Model | R² Score | MAE | RMSE | Clinical Utility |
@@ -123,6 +123,9 @@ In addition, we implemented rigorous statistical validation using 10,000-iterati
 ---
 
 ## 📁 Repository Structure
+
+<p id='repo'></p>
+
 
 ```
 IEEE_EMBS_BHI_25_CSOSEN/
@@ -211,6 +214,8 @@ IEEE_EMBS_BHI_25_CSOSEN/
 
 ## 🔬 Methodology Overview
 
+<p id='meth'></p>
+
 ### Five-Phase Modeling Framework
 
 We systematically evaluated **40 models** across five methodological phases to identify optimal architectures for depression outcome prediction:
@@ -249,6 +254,8 @@ We systematically evaluated **40 models** across five methodological phases to i
 ---
 
 ## 📊 Results Summary
+
+<p id='results'></p>
 
 ### Comprehensive 40-Model Performance Comparison
 
@@ -383,6 +390,8 @@ All figures are publication-ready (300 DPI) and available in [`imgs/`](imgs/):
 
 ## 🔄 Reproducibility
 
+<p id='reproduce'></p>
+
 ### ⚠️ Important Note
 
 **All experimental results are comprehensively documented in this repository.** To save computational resources and time, we recommend reviewing the pre-computed results rather than re-running the entire pipeline:
@@ -513,6 +522,8 @@ pip install -r requirements.txt
 ---
 
 ## 🚀 Usage
+
+<p id='use'></p>
 
 ### Quick Start Guide
 
