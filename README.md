@@ -39,9 +39,7 @@ Machine Learning Framework for Depression Score Analysis in Mindfulness Interven
   <a href="#">Repository Structure</a> •
   <a href="#">Methodology Overview</a> •
   <a href="#">Results</a> •
-  <a href="#">Visualizations</a> •
   <a href="#">Reproducibility</a> •
-  <a href="#">Installation</a> •
   <a href="#">Usage</a> •
 </p>
 
