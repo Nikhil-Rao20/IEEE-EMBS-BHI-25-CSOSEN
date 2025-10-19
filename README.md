@@ -28,7 +28,6 @@ Machine Learning Framework for Depression Score Analysis in Mindfulness Interven
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python"></a>
   <a href="https://bhi.embs.org/2025/"><img src="https://img.shields.io/badge/IEEE-BHI%202025-red.svg" alt="Conference"></a>
-  <a href="Reports/final-submission.tex"><img src="https://img.shields.io/badge/Paper-LaTeX-green.svg" alt="Paper"></a>
 </p>
 
 **IEEE EMBS BHI 2025 · Track-1 Data Competition · Team CSOSEN**
